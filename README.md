@@ -31,3 +31,10 @@ $ output/hello_world
 * [打印华氏温度与摄氏温度对照表（浮点数版本）](ch1/fahrenheit_celsius_table_float.c)
 * [练习1-3](ch1/exec1-3.c)
 * [练习1-4](ch1/exec1-4.c)
+
+### 1.3 for语句
+* [打印华氏温度与摄氏温度对照表（for循环）](ch1/fahrenheit_celsius_table_for.c)
+* [练习1-5](ch1/exec1-5.c)
+
+### 1.4 符号常量
+* [打印华氏温度与摄氏温度对照表（符号常量）](ch1/fahrenheit_celsius_table_define.c)
