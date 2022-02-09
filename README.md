@@ -6,19 +6,43 @@
 笔记：<https://blog.csdn.net/zzy979481894/article/details/122767409>
 
 # 运行方式
+## Windows
 方式一：复制到Visual Studio运行
 
 方式二：在命令行中使用gcc编译，例如：
-```bash
-# Windows
+```
+> cd ch1
 > mkdir output
-> gcc -o output\hello_world.exe ch1\hello_world.c
+> gcc -o output\hello_world.exe hello_world.c
 > output\hello_world.exe
+```
 
-# Linux
+## Linux
+方式一：使用gcc编译，例如：
+```bash
+$ cd ch1
 $ mkdir output
-$ gcc -o output/hello_world ch1/hello_world.c
+$ gcc -o output/hello_world.out hello_world.c
 $ output/hello_world
+```
+
+方式二：使用make构建
+
+构建单个目标
+```bash
+$ cd ch1
+$ make output/hello_world.out
+$ output/hello_world.out
+```
+
+构建所有目标
+```bash
+$ make
+```
+
+删除输出文件
+```bash
+$ make clean
 ```
 
 # 代码目录
