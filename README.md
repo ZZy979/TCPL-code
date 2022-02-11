@@ -23,7 +23,7 @@
 $ cd ch1
 $ mkdir output
 $ gcc -o output/hello_world.out hello_world.c
-$ output/hello_world
+$ output/hello_world.out
 ```
 
 方式二：使用make构建
@@ -62,3 +62,22 @@ $ make clean
 
 ### 1.4 符号常量
 * [打印华氏温度与摄氏温度对照表（符号常量）](ch1/fahrenheit_celsius_table_define.c)
+
+### 1.5字符输入/输出
+#### 1.5.1 文件复制
+* [将输入复制到输出（版本1）](ch1/file_copying.c)
+* [将输入复制到输出（版本2）](ch1/file_copying_v2.c)
+
+#### 1.5.2 字符计数
+* [字符计数（版本1）](ch1/character_counting.c)
+* [字符计数（版本2）](ch1/character_counting_v2.c)
+
+#### 1.5.3 行计数
+* [统计输入中的行数](ch1/line_counting.c)
+* [练习1-8](ch1/exec1-8.c)
+* [练习1-9](ch1/exec1-9.c)
+* [练习1-10](ch1/exec1-10.c)
+
+#### 1.5.4 单词计数
+* [单词计数](ch1/word_counting.c)
+* [练习1-12](ch1/exec1-12.c)
