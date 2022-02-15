@@ -69,8 +69,8 @@ $ make clean
 * [将输入复制到输出（版本2）](ch1/file_copying_v2.c)
 
 #### 1.5.2 字符计数
-* [字符计数（版本1）](ch1/character_counting.c)
-* [字符计数（版本2）](ch1/character_counting_v2.c)
+* [统计输入的字符数（版本1）](ch1/character_counting.c)
+* [统计输入的字符数（版本2）](ch1/character_counting_v2.c)
 
 #### 1.5.3 行计数
 * [统计输入中的行数](ch1/line_counting.c)
@@ -81,3 +81,8 @@ $ make clean
 #### 1.5.4 单词计数
 * [单词计数](ch1/word_counting.c)
 * [练习1-12](ch1/exec1-12.c)
+
+### 1.6 数组
+* [统计字符的出现次数](ch1/character_counting_array.c)
+* [练习1-13](ch1/exec1-13.c)
+* [练习1-14](ch1/exec1-14.c)
