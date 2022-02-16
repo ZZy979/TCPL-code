@@ -86,3 +86,7 @@ $ make clean
 * [统计字符的出现次数](ch1/character_counting_array.c)
 * [练习1-13](ch1/exec1-13.c)
 * [练习1-14](ch1/exec1-14.c)
+
+### 1.7 函数
+* [测试power函数](ch1/power.c)
+* [练习1-15](ch1/exec1-15.c)
