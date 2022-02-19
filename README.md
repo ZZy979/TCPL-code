@@ -90,3 +90,13 @@ $ make clean
 ### 1.7 函数
 * [测试power函数](ch1/power.c)
 * [练习1-15](ch1/exec1-15.c)
+
+### 1.8 参数——传值调用
+* [测试power函数（版本2）](ch1/power_v2.c)
+
+### 1.9 字符数组
+* [打印最长的输入行](ch1/print_longest_line.c)
+* [练习1-16](ch1/exec1-16.c)
+* [练习1-17](ch1/exec1-17.c)
+* [练习1-18](ch1/exec1-18.c)
+* [练习1-19](ch1/exec1-19.c)
