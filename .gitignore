@@ -1,2 +1,6 @@
+# C
 output/
 *.out
+
+# Visual Studio Code
+/.vscode/

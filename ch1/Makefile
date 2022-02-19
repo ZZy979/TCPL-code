@@ -1,5 +1,6 @@
 SOURCES = $(shell ls *.c)
 TARGETS = $(addprefix output/,$(SOURCES:.c=.out))
+CFLAGS = -ansi
 
 all: $(TARGETS)
 
