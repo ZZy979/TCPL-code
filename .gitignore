@@ -1,5 +1,5 @@
 # C
-output/
+*.o
 *.out
 
 # Visual Studio Code
