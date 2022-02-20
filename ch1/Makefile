@@ -1,14 +1,16 @@
 SOURCES = $(shell ls *.c)
-TARGETS = $(addprefix output/,$(SOURCES:.c=.out))
+TARGETS = $(SOURCES:.c=.out)
 CFLAGS = -ansi
 
 all: $(TARGETS)
 
-output/%.out: %.c
-	@[ -d output ] || mkdir output
+%.out: %.o
 	$(CC) -o $@ $(CFLAGS) $<
 
+exec1-21.out: exec1-21.o
+	$(CC) -o $@ $(CFLAGS) $< -lm
+
 clean:
-	rm -r output
+	rm *.o *.out
 
 .PHONY: all clean

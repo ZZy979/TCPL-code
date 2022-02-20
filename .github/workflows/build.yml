@@ -11,5 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Print gcc version
+      run: gcc --version
     - name: Build
       run: make
