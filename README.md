@@ -13,7 +13,7 @@
 ```
 > cd ch1
 > mkdir output
-> gcc -o output\hello_world.exe hello_world.c
+> gcc -o output\hello_world.exe -ansi hello_world.c
 > output\hello_world.exe
 ```
 
@@ -22,7 +22,7 @@
 ```bash
 $ cd ch1
 $ mkdir output
-$ gcc -o output/hello_world.out hello_world.c
+$ gcc -o output/hello_world.out -ansi hello_world.c
 $ output/hello_world.out
 ```
 
@@ -100,3 +100,11 @@ $ make clean
 * [练习1-17](ch1/exec1-17.c)
 * [练习1-18](ch1/exec1-18.c)
 * [练习1-19](ch1/exec1-19.c)
+
+### 1.10 外部变量与作用域
+* [打印最长的输入行（外部变量）](ch1/print_longest_line_extern.c)
+* [练习1-20](ch1/exec1-20.c)
+* [练习1-21](ch1/exec1-21.c)
+* [练习1-22](ch1/exec1-22.c)
+* [练习1-23](ch1/exec1-23.c)
+* [练习1-24](ch1/exec1-24.c)
