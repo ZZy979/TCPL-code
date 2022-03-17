@@ -1,6 +1,7 @@
 # C
 *.o
 *.out
+*.exe
 
 # Visual Studio Code
 /.vscode/

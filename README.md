@@ -12,18 +12,16 @@
 方式二：在命令行中使用gcc编译，例如：
 ```
 > cd ch1
-> mkdir output
-> gcc -o output\hello_world.exe -ansi hello_world.c
-> output\hello_world.exe
+> gcc -o hello_world.exe -ansi hello_world.c
+> hello_world.exe
 ```
 
 ## Linux
 方式一：使用gcc编译，例如：
 ```bash
 $ cd ch1
-$ mkdir output
-$ gcc -o output/hello_world.out -ansi hello_world.c
-$ output/hello_world.out
+$ gcc -o hello_world.out -ansi hello_world.c
+$ ./hello_world.out
 ```
 
 方式二：使用make构建
@@ -31,8 +29,8 @@ $ output/hello_world.out
 构建单个目标
 ```bash
 $ cd ch1
-$ make output/hello_world.out
-$ output/hello_world.out
+$ make hello_world.out
+$ ./hello_world.out
 ```
 
 构建所有目标
@@ -108,3 +106,16 @@ $ make clean
 * [练习1-22](ch1/exec1-22.c)
 * [练习1-23](ch1/exec1-23.c)
 * [练习1-24](ch1/exec1-24.c)
+
+## 第2章 类型、运算符与表达式
+### 2.2 数据类型及长度
+* [练习2-1](ch2/exec2-1.c)
+
+### 2.3 常量
+* [strlen函数](ch2/strlen.c)
+
+### 2.7 类型转换
+* [atoi函数](ch2/atoi.c)
+* [lower函数](ch2/lower.c)
+* [伪随机数生成器](ch2/rand.c)
+* [练习2-3](ch2/htoi.c)
