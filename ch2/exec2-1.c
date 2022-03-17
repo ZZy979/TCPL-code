@@ -10,8 +10,8 @@ int main() {
     printf("unsigned short: 0~%d\n", USHRT_MAX);
     printf("  signed int: %d~%d\n", INT_MIN, INT_MAX);
     printf("unsigned int: 0~%u\n", UINT_MAX);
-    printf("  signed long: %d~%d\n", LONG_MIN, LONG_MAX);
-    printf("unsigned long: 0~%u\n", ULONG_MAX);
+    printf("  signed long: %ld~%ld\n", LONG_MIN, LONG_MAX);
+    printf("unsigned long: 0~%lu\n", ULONG_MAX);
 
     printf("直接计算：\n");
     printf("  signed char: %d~%d\n", -(char) ((unsigned char) ~0 >> 1) - 1, (char) ((unsigned char) ~0 >> 1));
@@ -20,7 +20,7 @@ int main() {
     printf("unsigned short: 0~%d\n", (unsigned short) ~0);
     printf("  signed int: %d~%d\n", -(int) (((unsigned int) ~0 >> 1) - 1), (int) ((unsigned int) ~0 >> 1));
     printf("unsigned int: 0~%u\n", (unsigned int) ~0);
-    printf("  signed long: %d~%d\n", -(long) (((unsigned long) ~0 >> 1) - 1), (long) ((unsigned long) ~0 >> 1));
-    printf("unsigned long: 0~%u\n", (unsigned long) ~0);
+    printf("  signed long: %ld~%ld\n", -(long) (((unsigned long) ~0 >> 1) - 1), (long) ((unsigned long) ~0 >> 1));
+    printf("unsigned long: 0~%lu\n", (unsigned long) ~0);
     return 0;
 }
