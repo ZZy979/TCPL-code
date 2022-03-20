@@ -119,3 +119,9 @@ $ make clean
 * [lower函数](ch2/lower.c)
 * [伪随机数生成器](ch2/rand.c)
 * [练习2-3](ch2/htoi.c)
+
+### 2.8 自增运算符与自减运算符
+* [squeeze函数](ch2/squeeze.c)
+* [strcat函数](ch2/strcat.c)
+* [练习2-4](ch2/squeeze2.c)
+* [练习2-5](ch2/any.c)

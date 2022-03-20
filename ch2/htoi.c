@@ -2,7 +2,7 @@
 
 #include <ctype.h>
 
-/* htoi函数：把十六进制数字符串（包含可选的前缀0x或0X）转换十进制整数 */
+/* htoi: 把十六进制数字符串（包含可选的前缀0x或0X）转换十进制整数 */
 int htoi(char s[]) {
     int i = 0, d, n = 0;
 

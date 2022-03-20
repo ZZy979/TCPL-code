@@ -1,4 +1,5 @@
-TARGETS = exec2-1.out strlen.o atoi.o lower.o rand.o htoi.o
+HEADERS = $(shell ls *.h)
+TARGETS = $(HEADERS:.h=.o) exec2-1.out
 CFLAGS = -ansi
 
 all: $(TARGETS)
