@@ -125,3 +125,9 @@ $ make clean
 * [strcat函数](ch2/strcat.c)
 * [练习2-4](ch2/squeeze2.c)
 * [练习2-5](ch2/any.c)
+
+### 2.9 按位运算符
+* [getbits函数](ch2/getbits.c)
+* [练习2-6](ch2/setbits.c)
+* [练习2-7](ch2/invert.c)
+* [练习2-8](ch2/rightrot.c)
