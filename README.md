@@ -131,3 +131,10 @@ $ make clean
 * [练习2-6](ch2/setbits.c)
 * [练习2-7](ch2/invert.c)
 * [练习2-8](ch2/rightrot.c)
+
+### 2.10 赋值运算符与表达式
+* [bitcount函数](ch2/bitcount.c)
+* [练习2-9](ch2/bitcount2.c)
+
+### 2.11 条件表达式
+* [练习2-10](ch2/lower2.c)
