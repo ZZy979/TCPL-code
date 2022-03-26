@@ -138,3 +138,8 @@ $ make clean
 
 ### 2.11 条件表达式
 * [练习2-10](ch2/lower2.c)
+
+## 第3章 控制流
+### 3.3 else-if语句
+* [binsearch函数](ch3/binsearch.c)
+* [练习3-1](ch3/exec3-1.c)
