@@ -143,3 +143,7 @@ $ make clean
 ### 3.3 else-if语句
 * [binsearch函数](ch3/binsearch.c)
 * [练习3-1](ch3/exec3-1.c)
+
+### 3.4
+* [统计字符的出现次数](ch3/character_counting_switch.c)
+* [练习3-2](ch3/escape.c)

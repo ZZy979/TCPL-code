@@ -1,5 +1,5 @@
 HEADERS = $(shell ls *.h)
-TARGETS = $(HEADERS:.h=.o) exec3-1.out
+TARGETS = $(HEADERS:.h=.o) exec3-1.out character_counting_switch.out
 CFLAGS = -ansi
 
 all: $(TARGETS)
