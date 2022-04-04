@@ -5,10 +5,10 @@ CFLAGS = -ansi
 all: $(TARGETS)
 
 %.out: %.o
-	$(CC) -o $@ $(CFLAGS) $<
+	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
 
 exec1-21.out: exec1-21.o
-	$(CC) -o $@ $(CFLAGS) $< -lm
+	$(CC) -o $@ $(LDFLAGS) $< -lm
 
 clean:
 	rm *.o *.out
