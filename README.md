@@ -153,3 +153,12 @@ $ make clean
 * [shellsort函数](ch3/shellsort.c)
 * [reverse函数](ch3/reverse.c)
 * [练习3-3](ch3/expand.c)
+
+### 3.6 do-while循环
+* [itoa函数](ch3/itoa.c)
+* [练习3-4](ch3/itoa2.c)
+* [练习3-5](ch3/itob.c)
+* [练习3-6](ch3/itoa3.c)
+
+### 3.7 break语句与continue语句
+* [trim函数](ch3/trim.c)
