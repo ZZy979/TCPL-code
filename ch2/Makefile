@@ -14,6 +14,6 @@ lower2.o: lower2.c lower.h
 	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
 
 clean:
-	rm *.o *.out
+	$(RM) *.o *.out
 
 .PHONY: all clean

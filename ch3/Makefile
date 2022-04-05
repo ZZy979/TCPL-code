@@ -19,6 +19,6 @@ exec3-1.out: exec3-1.o binsearch.o binsearch2.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
 
 clean:
-	rm *.o *.out
+	$(RM) *.o *.out
 
 .PHONY: all clean

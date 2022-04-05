@@ -162,3 +162,8 @@ $ make clean
 
 ### 3.7 break语句与continue语句
 * [trim函数](ch3/trim.c)
+
+## 第4章 函数与程序结构
+### 4.1 函数的基本知识
+* [打印所有与模式匹配的行](ch4/grep.c)
+* [练习4-1](ch4/strrindex.c)

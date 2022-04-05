@@ -11,6 +11,6 @@ exec1-21.out: exec1-21.o
 	$(CC) -o $@ $(LDFLAGS) $< -lm
 
 clean:
-	rm *.o *.out
+	$(RM) *.o *.out
 
 .PHONY: all clean
