@@ -167,3 +167,8 @@ $ make clean
 ### 4.1 函数的基本知识
 * [打印所有与模式匹配的行](ch4/grep.c)
 * [练习4-1](ch4/strrindex.c)
+
+### 4.2 返回非整型值的函数
+* [atof函数](ch4/atof.c)
+* [简单计算器](ch4/rudimentary_calculator.c)
+* [练习4-2](ch4/atof2.c)
