@@ -172,3 +172,10 @@ $ make clean
 * [atof函数](ch4/atof.c)
 * [简单计算器](ch4/rudimentary_calculator.c)
 * [练习4-2](ch4/atof2.c)
+
+### 4.3 外部变量
+* 逆波兰计算器
+    * [main函数](ch4/reverse_polish_calculator/main.c)
+    * [push和pop函数](ch4/reverse_polish_calculator/stack.c)
+    * [getop函数](ch4/reverse_polish_calculator/getop.c)
+    * [getch和ungetch函数](ch4/reverse_polish_calculator/getch.c)

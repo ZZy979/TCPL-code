@@ -1,4 +1,4 @@
-TARGETS = grep.out rudimentary_calculator.out
+TARGETS = grep.out rudimentary_calculator.out reverse_polish_calculator.out
 CFLAGS = -ansi
 
 all: $(TARGETS)
@@ -14,7 +14,11 @@ atof2.o: atof2.c atof.h
 grep.out: grep.o getline.o strindex.o
 rudimentary_calculator.out: rudimentary_calculator.o getline.o atof.o
 
+reverse_polish_calculator.out:
+	$(MAKE) -C reverse_polish_calculator $@
+
 clean:
 	$(RM) *.o *.out
+	$(MAKE) -C reverse_polish_calculator clean
 
 .PHONY: all clean
