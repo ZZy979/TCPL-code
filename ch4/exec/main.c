@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  /* 为了使用atof()函数 */
+#include <math.h>
 
 #include "calc.h"
 
@@ -30,6 +31,13 @@ int main() {
                 op2 = pop();
                 if (op2 != 0.0)
                     push(pop() / op2);
+                else
+                    printf("error: zero divisor\n");
+                break;
+            case '%':
+                op2 = pop();
+                if (op2 != 0.0)
+                    push(fmod(pop(), op2));
                 else
                     printf("error: zero divisor\n");
                 break;
