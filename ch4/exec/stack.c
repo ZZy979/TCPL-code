@@ -24,3 +24,35 @@ double pop(void) {
         return 0.0;
     }
 }
+
+/* show_top：打印栈顶元素 */
+void show_top(void) {
+    if (sp > 0)
+        printf("\t%.8g\n", val[sp - 1]);
+    else
+        printf("error: stack empty\n");
+}
+
+/* duplicate_top：复制栈顶元素 */
+void duplicate_top(void) {
+    if (sp > 0)
+        push(val[sp - 1]);
+    else
+        printf("error: stack empty\n");
+}
+
+/* swap_top：交换栈顶两个元素 */
+void swap_top(void) {
+    if (sp > 1) {
+        double temp = val[sp - 1];
+        val[sp - 1] = val[sp - 2];
+        val[sp - 2] = temp;
+    }
+    else
+        printf("error: less than two elements\n");
+}
+
+/* clear_stack：清空栈 */
+void clear_stack(void) {
+    sp = 0;
+}
