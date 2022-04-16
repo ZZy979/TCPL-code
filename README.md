@@ -103,9 +103,6 @@ $ make clean
 * [打印最长的输入行（外部变量）](ch1/print_longest_line_extern.c)
 * [练习1-20](ch1/exec1-20.c)
 * [练习1-21](ch1/exec1-21.c)
-* [练习1-22](ch1/exec1-22.c)
-* [练习1-23](ch1/exec1-23.c)
-* [练习1-24](ch1/exec1-24.c)
 
 ## 第2章 类型、运算符与表达式
 ### 2.2 数据类型及长度
@@ -174,8 +171,9 @@ $ make clean
 * [练习4-2](ch4/atof2.c)
 
 ### 4.3 外部变量
-* 逆波兰计算器
+* [逆波兰计算器](ch4/reverse_polish_calculator)
     * [main函数](ch4/reverse_polish_calculator/main.c)
     * [push和pop函数](ch4/reverse_polish_calculator/stack.c)
     * [getop函数](ch4/reverse_polish_calculator/getop.c)
     * [getch和ungetch函数](ch4/reverse_polish_calculator/getch.c)
+* [练习4-3~4-6](ch4/exec)：扩充逆波兰计算器
