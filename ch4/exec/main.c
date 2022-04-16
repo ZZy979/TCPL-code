@@ -17,6 +17,9 @@ int main() {
             case NUMBER:
                 push(atof(s));
                 break;
+            case IDENTIFIER:
+                deal_with_identifier(s);
+                break;
             case '+':
                 push(pop() + pop());
                 break;
