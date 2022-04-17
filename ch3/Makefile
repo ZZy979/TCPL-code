@@ -1,4 +1,4 @@
-HEADERS = $(shell ls *.h)
+HEADERS = $(wildcard *.h)
 TARGETS = $(HEADERS:.h=.o) exec3-1.out character_counting_switch.out itoa2.o
 CFLAGS = -ansi
 

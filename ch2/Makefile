@@ -1,4 +1,4 @@
-HEADERS = $(shell ls *.h)
+HEADERS = $(wildcard *.h)
 TARGETS = $(HEADERS:.h=.o) exec2-1.out bitcount2.o lower2.o
 CFLAGS = -ansi
 

@@ -177,3 +177,5 @@ $ make clean
     * [getop函数](ch4/reverse_polish_calculator/getop.c)
     * [getch和ungetch函数](ch4/reverse_polish_calculator/getch.c)
 * [练习4-3~4-6](ch4/exec)：扩充逆波兰计算器
+* [练习4-7](ch4/ungets.c)
+* [练习4-8](ch4/getch2.c)

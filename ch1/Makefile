@@ -1,4 +1,4 @@
-SOURCES = $(shell ls *.c)
+SOURCES = $(wildcard *.c)
 TARGETS = $(SOURCES:.c=.out)
 CFLAGS = -ansi
 
