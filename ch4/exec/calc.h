@@ -4,6 +4,11 @@
 
 void deal_with_identifier(char s[]);
 
+extern double var[26];
+extern int vp;
+extern double last;
+void deal_with_var(char s[]);
+
 void push(double f);
 double pop(void);
 void show_top(void);

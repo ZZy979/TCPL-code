@@ -44,6 +44,14 @@ int main() {
                 else
                     printf("error: zero divisor\n");
                 break;
+            case '=':
+                var[vp] = pop();
+                pop();  /* 变量的旧值 */
+                push(var[vp]);
+                break;
+            case '_':
+                push(last);
+                break;
             case '?':
                 show_top();
                 break;
@@ -57,7 +65,7 @@ int main() {
                 clear_stack();
                 break;
             case '\n':
-                printf("\t%.8g\n", pop());
+                printf("\t%.8g\n", last = pop());
                 break;
             default:
                 printf("error: unknown command %s\n", s);

@@ -27,5 +27,5 @@ void deal_with_identifier(char s[]) {
         push(pow(pop(), op2));
     }
     else
-        printf("error: invalid function %s\n", s);
+        deal_with_var(s);
 }
