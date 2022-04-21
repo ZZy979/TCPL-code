@@ -179,3 +179,12 @@ $ make clean
 * [练习4-3~4-6](ch4/exec)：扩充逆波兰计算器
 * [练习4-7](ch4/ungets.c)
 * [练习4-8](ch4/getch2.c)
+
+### 4.10 递归
+* [printd函数](ch4/printd.c)
+* [qsort函数](ch4/qsort.c)
+* [练习4-12](ch4/itoa.c)
+* [练习4-13](ch4/reverse.c)
+
+### 4.11 C预处理器
+* [练习4-14](ch4/swap_macro.h)

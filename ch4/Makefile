@@ -1,4 +1,4 @@
-HEADERS = $(wildcard *.h)
+HEADERS = $(filter-out swap_macro.h,$(wildcard *.h))
 TARGETS = $(HEADERS:.h=.o) grep.out rudimentary_calculator.out atof2.o getch2.o
 SUBDIRS = $(shell ls -d */)
 CFLAGS = -ansi
@@ -12,7 +12,6 @@ all: $(TARGETS)
 	$(CC) -c -o $@ $(CFLAGS) $<
 
 atof2.o: atof2.c atof.h
-ungets.o: exec/getch.o
 
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
