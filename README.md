@@ -188,3 +188,9 @@ $ make clean
 
 ### 4.11 C预处理器
 * [练习4-14](ch4/swap_macro.h)
+
+## 第5章 指针与数组
+### 5.2 指针与函数参数
+* [getint函数](ch5/getint.c)
+* [练习5-1](ch5/getint2.c)
+* [练习5-2](ch5/getfloat.c)
