@@ -194,3 +194,6 @@ $ make clean
 * [getint函数](ch5/getint.c)
 * [练习5-1](ch5/getint2.c)
 * [练习5-2](ch5/getfloat.c)
+
+### 5.3 指针与数组
+* [strlen函数](ch5/strlen.c)
