@@ -1,6 +1,6 @@
 HEADERS = $(wildcard *.h)
 TARGETS = $(HEADERS:.h=.o) exec2-1.out bitcount2.o lower2.o
-CFLAGS = -ansi
+CFLAGS = -ansi -Wno-builtin-declaration-mismatch
 
 all: $(TARGETS)
 

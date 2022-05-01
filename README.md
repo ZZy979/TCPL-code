@@ -201,3 +201,17 @@ $ make clean
 ### 5.4 地址算术运算
 * [简单存储分配程序](ch5/alloc.c)
 * [strlen函数（版本2）](ch5/strlen2.c)
+
+### 5.5 字符指针与函数
+* [strcpy函数（数组下标版本）](ch5/strcpy.c)
+* [strcpy函数（指针版本1）](ch5/strcpy2.c)
+* [strcpy函数（指针版本2）](ch5/strcpy3.c)
+* [strcpy函数（指针版本3）](ch5/strcpy4.c)
+* [strcmp函数（数组下标版本）](ch5/strcmp.c)
+* [strcmp函数（指针版本）](ch5/strcmp2.c)
+* [练习5-3](ch5/strcat.c)
+* [练习5-4](ch5/strend.c)
+* 练习5-5
+    * [strncpy函数](ch5/strncpy.c)
+    * [strncat函数](ch5/strncat.c)
+    * [strncmp函数](ch5/strncmp.c)
