@@ -11,6 +11,7 @@ all: $(TARGETS)
 getint.o: getint.c getint.h getch.h
 getint2.o: getint2.c getint.h getch.h
 getfloat.o: getfloat.c getfloat.h getch.h
+strlen2.o: strlen2.c strlen.h
 
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)

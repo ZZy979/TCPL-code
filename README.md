@@ -197,3 +197,7 @@ $ make clean
 
 ### 5.3 指针与数组
 * [strlen函数](ch5/strlen.c)
+
+### 5.4 地址算术运算
+* [简单存储分配程序](ch5/alloc.c)
+* [strlen函数（版本2）](ch5/strlen2.c)
