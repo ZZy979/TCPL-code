@@ -215,3 +215,10 @@ $ make clean
     * [strncpy函数](ch5/strncpy.c)
     * [strncat函数](ch5/strncat.c)
     * [strncmp函数](ch5/strncmp.c)
+
+### 5.6 指针数组以及指向指针的指针
+* [排序文本行](ch5/sort)
+    * [main函数](ch5/sort/main.c)
+    * [readlines和writelines函数](ch5/sort/lineio.c)
+    * [qsort函数](ch5/sort/qsort.c)
+* [练习5-7](ch5/exec5-7)
