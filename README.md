@@ -222,3 +222,11 @@ $ make clean
     * [readlines和writelines函数](ch5/sort/lineio.c)
     * [qsort函数](ch5/sort/qsort.c)
 * [练习5-7](ch5/exec5-7)
+
+### 5.7 多维数组
+* [day_of_year和month_day函数](ch5/date_conversion.c)
+* [练习5-8](ch5/date_conversion2.c)
+
+### 5.9 指针与多维数组
+* [month_name函数](ch5/month_name.c)
+* [练习5-9](ch5/date_conversion3.c)

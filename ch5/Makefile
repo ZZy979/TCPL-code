@@ -20,6 +20,8 @@ strcpy2.o: strcpy2.c strcpy.h
 strcpy3.o: strcpy3.c strcpy.h
 strcpy4.o: strcpy4.c strcpy.h
 strcmp2.o: strcmp2.c strcmp.h
+date_conversion2.o: date_conversion2.c date_conversion.h
+date_conversion3.o: date_conversion3.c date_conversion.h
 
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
