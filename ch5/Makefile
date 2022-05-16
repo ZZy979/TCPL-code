@@ -1,5 +1,5 @@
 HEADERS = $(wildcard *.h)
-TARGETS = $(HEADERS:.h=.o)
+TARGETS = $(HEADERS:.h=.o) echo.out echo_v2.out find.out find_v2.out
 SUBDIRS = $(shell ls -d */)
 CFLAGS = -ansi -Wno-builtin-declaration-mismatch
 
@@ -22,9 +22,14 @@ strcpy4.o: strcpy4.c strcpy.h
 strcmp2.o: strcmp2.c strcmp.h
 date_conversion2.o: date_conversion2.c date_conversion.h
 date_conversion3.o: date_conversion3.c date_conversion.h
+find.o: find.c ../ch4/getline.h
+find_v2.o: find_v2.c ../ch4/getline.h
 
 %.out: %.o
-	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
+	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+
+find.out: find.o ../ch4/getline.o
+find_v2.out: find_v2.o ../ch4/getline.o
 
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)

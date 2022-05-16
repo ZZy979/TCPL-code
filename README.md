@@ -230,3 +230,9 @@ $ make clean
 ### 5.9 指针与多维数组
 * [month_name函数](ch5/month_name.c)
 * [练习5-9](ch5/date_conversion3.c)
+
+### 5.10 命令行参数
+* [回显命令行参数（版本1）](ch5/echo.c)
+* [回显命令行参数（版本2）](ch5/echo_v2.c)
+* [打印所有与模式匹配的行](ch5/find.c)
+* [打印所有与模式匹配的行（支持选项参数）](ch5/find_v2.c)
