@@ -236,3 +236,16 @@ $ make clean
 * [回显命令行参数（版本2）](ch5/echo_v2.c)
 * [打印所有与模式匹配的行](ch5/find.c)
 * [打印所有与模式匹配的行（支持选项参数）](ch5/find_v2.c)
+
+### 5.11 指向函数的指针
+* [排序文本行（版本2）](ch5/sort_v2)
+    * [main函数](ch5/sort_v2/main.c)
+    * [qsort函数](ch5/sort_v2/qsort.c)
+    * [numcmp函数](ch5/sort_v2/numcmp.c)
+
+### 5.12 复杂声明
+* [声明转换](ch5/dcl_convert)
+    * [gettoken函数](ch5/dcl_convert/lexer.c)
+    * [dcl和dirdcl函数](ch5/dcl_convert/parser.c)
+    * [dcl程序](ch5/dcl_convert/dcl.c)
+    * [undcl程序](ch5/dcl_convert/undcl.c)

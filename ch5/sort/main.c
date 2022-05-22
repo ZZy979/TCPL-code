@@ -7,6 +7,7 @@
 
 char *lineptr[MAXLINES];    /* 指向文本行的指针数组 */
 
+/* 对输入的文本行进行排序 */
 int main() {
     int nlines;     /* 读取的输入行数目 */
 
