@@ -249,3 +249,8 @@ $ make clean
     * [dcl和dirdcl函数](ch5/dcl_convert/parser.c)
     * [dcl程序](ch5/dcl_convert/dcl.c)
     * [undcl程序](ch5/dcl_convert/undcl.c)
+
+## 第6章 结构
+### 6.2 结构与函数
+* [point结构和操作函数](ch6/point.c)
+* [rect结构和操作函数](ch6/rect.c)
