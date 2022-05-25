@@ -254,3 +254,10 @@ $ make clean
 ### 6.2 结构与函数
 * [point结构和操作函数](ch6/point.c)
 * [rect结构和操作函数](ch6/rect.c)
+
+### 6.3 结构数组
+* [统计C语言关键字出现次数](ch6/keyword_counting)
+    * [main函数](ch6/keyword_counting/main.c)
+    * [key结构](ch6/keyword_counting/key.h)
+    * [getword函数](ch6/keyword_counting/getword.c)
+    * [binsearch函数](ch6/keyword_counting/binsearch.c)
