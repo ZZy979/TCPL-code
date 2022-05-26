@@ -261,3 +261,8 @@ $ make clean
     * [key结构](ch6/keyword_counting/key.h)
     * [getword函数](ch6/keyword_counting/getword.c)
     * [binsearch函数](ch6/keyword_counting/binsearch.c)
+
+### 6.4 指向结构的指针
+* [统计C语言关键字出现次数（指针版本）](ch6/keyword_counting_v2)
+    * [main函数](ch6/keyword_counting_v2/main.c)
+    * [binsearch函数](ch6/keyword_counting_v2/binsearch.c)
