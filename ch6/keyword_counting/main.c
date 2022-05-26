@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 #include "key.h"
-#include "getword.h"
+#include "../getword.h"
 #include "binsearch.h"
 
 #define MAXWORD 100

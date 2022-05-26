@@ -12,6 +12,7 @@ all: $(TARGETS)
 	$(CC) -c -o $@ $(CFLAGS) $<
 
 rect.o: rect.c rect.h point.h
+getword.o: getword.c getword.h ../ch5/getch.h
 
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)

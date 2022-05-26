@@ -259,10 +259,16 @@ $ make clean
 * [统计C语言关键字出现次数](ch6/keyword_counting)
     * [main函数](ch6/keyword_counting/main.c)
     * [key结构](ch6/keyword_counting/key.h)
-    * [getword函数](ch6/keyword_counting/getword.c)
+    * [getword函数](ch6/getword.c)
     * [binsearch函数](ch6/keyword_counting/binsearch.c)
 
 ### 6.4 指向结构的指针
 * [统计C语言关键字出现次数（指针版本）](ch6/keyword_counting_v2)
     * [main函数](ch6/keyword_counting_v2/main.c)
     * [binsearch函数](ch6/keyword_counting_v2/binsearch.c)
+
+### 6.5 自引用结构
+* [统计单词出现次数](ch6/word_freq_count)
+    * [main函数](ch6/word_freq_count/main.c)
+    * [tnode结构及操作函数](ch6/word_freq_count/tnode.h)
+    * [strdup函数](ch6/word_freq_count/strdup.c)
