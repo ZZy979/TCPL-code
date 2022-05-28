@@ -271,4 +271,7 @@ $ make clean
 * [统计单词出现次数](ch6/word_freq_count)
     * [main函数](ch6/word_freq_count/main.c)
     * [tnode结构及操作函数](ch6/word_freq_count/tnode.h)
-    * [strdup函数](ch6/word_freq_count/strdup.c)
+    * [strdup函数](ch6/strdup.c)
+
+### 6.6 表查找
+* [散列表](ch6/hash_table.c)

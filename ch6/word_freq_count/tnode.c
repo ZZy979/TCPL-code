@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "strdup.h"
+#include "../strdup.h"
 
 /* addtree：在p或p的下方增加一个节点w */
 struct tnode *addtree(struct tnode *p, char *w) {

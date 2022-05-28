@@ -13,6 +13,7 @@ all: $(TARGETS)
 
 rect.o: rect.c rect.h point.h
 getword.o: getword.c getword.h ../ch5/getch.h
+hash_table.o: hash_table.c hash_table.h strdup.h
 
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
