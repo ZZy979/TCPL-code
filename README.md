@@ -282,3 +282,6 @@ $ make clean
 
 ### 7.3 变长参数表
 * [minprintf函数](ch7/minprintf.c)
+
+### 7.4 格式化输入——scanf
+* [简单计算器](ch7/rudimentary_calculator.c)

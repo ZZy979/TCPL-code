@@ -1,5 +1,5 @@
 HEADERS = $(wildcard *.h)
-TARGETS = $(HEADERS:.h=.o) lower.out
+TARGETS = $(HEADERS:.h=.o) lower.out rudimentary_calculator.out
 CFLAGS = -ansi
 
 all: $(TARGETS)
