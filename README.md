@@ -279,3 +279,6 @@ $ make clean
 ## 第7章 输入与输出
 ### 7.1 标准输入/输出
 * [将输入转换为小写形式](ch7/lower.c)
+
+### 7.3 变长参数表
+* [minprintf函数](ch7/minprintf.c)
