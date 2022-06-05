@@ -285,3 +285,12 @@ $ make clean
 
 ### 7.4 格式化输入——scanf
 * [简单计算器](ch7/rudimentary_calculator.c)
+
+### 7.5 文件访问
+* [拼接文件（版本1）](ch7/cat.c)
+
+### 7.6 错误处理——stderr和exit
+* [拼接文件（版本2）](ch7/cat_v2.c)
+
+### 7.7 行输入和输出
+* [getline函数](ch7/getline.c)
