@@ -10,7 +10,10 @@ all: $(TARGETS)
 exec1-21.out: exec1-21.o
 	$(CC) -o $@ $(LDFLAGS) $< -lm
 
+test: all
+	bash test.sh
+
 clean:
 	$(RM) *.o *.out
 
-.PHONY: all clean
+.PHONY: all test clean

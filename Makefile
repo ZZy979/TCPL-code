@@ -5,9 +5,12 @@ all: $(SUBDIRS)
 $(SUBDIRS):
 	$(MAKE) -C $@
 
+test:
+	$(MAKE) -C ch1 test
+
 clean:
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir clean; \
 	done
 
-.PHONY: all $(SUBDIRS) clean
+.PHONY: all $(SUBDIRS) test clean
