@@ -15,3 +15,5 @@ jobs:
       run: gcc --version
     - name: Build
       run: make
+    - name: Unit test
+      run: make test
