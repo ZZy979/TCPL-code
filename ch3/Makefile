@@ -18,7 +18,10 @@ itob.o: itob.c itob.h reverse.h
 exec3-1.out: exec3-1.o binsearch.o binsearch2.o
 	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 
-.PHONY: all clean
+.PHONY: all test clean

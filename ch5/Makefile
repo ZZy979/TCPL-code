@@ -1,6 +1,6 @@
 HEADERS = $(wildcard *.h)
 TARGETS = $(HEADERS:.h=.o) echo.out echo_v2.out find.out find_v2.out
-SUBDIRS = $(shell ls -d */)
+SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi -Wno-builtin-declaration-mismatch
 
 all: $(TARGETS)
@@ -34,10 +34,13 @@ find_v2.out: find_v2.o ../ch4/getline.o
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir clean; \
 	done
 
-.PHONY: all clean
+.PHONY: all test clean

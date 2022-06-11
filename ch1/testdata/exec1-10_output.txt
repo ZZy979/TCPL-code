@@ -1,0 +1,4 @@
+\\n      newline
+\\r      carriage return
+\\t\t\thorizontal tab
+\\\\\t\tbackslash

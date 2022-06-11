@@ -11,7 +11,7 @@ exec1-21.out: exec1-21.o
 	$(CC) -o $@ $(LDFLAGS) $< -lm
 
 test: all
-	bash test.sh
+	@bash ../test.sh testdata/tests.txt
 
 clean:
 	$(RM) *.o *.out

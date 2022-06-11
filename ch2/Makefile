@@ -13,7 +13,10 @@ lower2.o: lower2.c lower.h
 %.out: %.o
 	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 
-.PHONY: all clean
+.PHONY: all test clean

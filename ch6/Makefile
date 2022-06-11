@@ -1,6 +1,6 @@
 HEADERS = $(wildcard *.h)
 TARGETS = $(HEADERS:.h=.o)
-SUBDIRS = $(shell ls -d */)
+SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi
 
 all: $(TARGETS)
@@ -21,10 +21,13 @@ hash_table.o: hash_table.c hash_table.h strdup.h
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir clean; \
 	done
 
-.PHONY: all clean
+.PHONY: all test clean

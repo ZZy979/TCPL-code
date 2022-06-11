@@ -1,6 +1,6 @@
 HEADERS = $(filter-out swap_macro.h,$(wildcard *.h))
 TARGETS = $(HEADERS:.h=.o) grep.out rudimentary_calculator.out atof2.o getch2.o
-SUBDIRS = $(shell ls -d */)
+SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi
 
 all: $(TARGETS)
@@ -22,10 +22,13 @@ rudimentary_calculator.out: rudimentary_calculator.o getline.o atof.o
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir clean; \
 	done
 
-.PHONY: all clean
+.PHONY: all test clean

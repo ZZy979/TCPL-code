@@ -16,7 +16,10 @@ cat_v2.o: cat_v2.c filecopy.h
 cat.out: cat.o filecopy.o
 cat_v2.out: cat_v2.o filecopy.o
 
+test: all
+	@bash ../test.sh testdata/tests.txt
+
 clean:
 	$(RM) *.o *.out
 
-.PHONY: all clean
+.PHONY: all test clean

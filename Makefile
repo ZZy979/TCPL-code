@@ -6,7 +6,9 @@ $(SUBDIRS):
 	$(MAKE) -C $@
 
 test:
-	$(MAKE) -C ch1 test
+	for dir in $(SUBDIRS); do \
+	  $(MAKE) -C $$dir test; \
+	done
 
 clean:
 	for dir in $(SUBDIRS); do \

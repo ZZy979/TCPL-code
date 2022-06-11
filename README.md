@@ -38,6 +38,11 @@ $ ./hello_world.out
 $ make
 ```
 
+单元测试
+```bash
+$ make test
+```
+
 删除输出文件
 ```bash
 $ make clean
