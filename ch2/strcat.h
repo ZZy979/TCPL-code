@@ -1,3 +1,3 @@
 #pragma once
 
-void strcat(char s[], char t[]);
+void strcat_(char s[], char t[]);

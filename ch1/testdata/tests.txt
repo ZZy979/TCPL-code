@@ -7,7 +7,7 @@ fahrenheit_celsius_table_for.out testdata/fahrenheit_celsius_table_float_output.
 exec1-5.out testdata/exec1-5_output.txt
 fahrenheit_celsius_table_define.out testdata/fahrenheit_celsius_table_float_output.txt
 file_copying.out testdata/addressbook.txt testdata/addressbook.txt
-file_copying.out
+file_copying.out /dev/null
 file_copying_v2.out testdata/addressbook.txt testdata/addressbook.txt
 character_counting.out testdata/character_counting_output.txt testdata/addressbook.txt
 character_counting.out testdata/character_counting_output2.txt
@@ -27,7 +27,7 @@ power.out testdata/power_output.txt
 exec1-15.out testdata/fahrenheit_celsius_table_float_output.txt
 power_v2.out testdata/power_output.txt
 print_longest_line.out testdata/print_longest_line_output.txt testdata/addressbook.txt
-print_longest_line.out
+print_longest_line.out /dev/null
 exec1-16.out testdata/exec1-16_output.txt testdata/addressbook.txt
 exec1-17.out testdata/exec1-17_output.txt testdata/exec1-17_input.txt
 exec1-18.out testdata/exec1-18_output.txt testdata/exec1-18_input.txt

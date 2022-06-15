@@ -1,0 +1,17 @@
+exec2-1.out testdata/exec2-1_output.txt
+strlen_test.out
+atoi_test.out
+lower_test.out
+rand_test.out
+htoi_test.out
+squeeze_test.out
+strcat_test.out
+squeeze2_test.out
+any_test.out
+getbits_test.out
+setbits_test.out
+invert_test.out
+rightrot_test.out
+bitcount_test.out
+bitcount2_test.out
+lower2_test.out
