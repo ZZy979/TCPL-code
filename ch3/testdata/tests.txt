@@ -1,0 +1,13 @@
+binsearch_test.out
+binsearch2_test.out
+character_counting_switch.out ../ch1/testdata/character_counting_array_output.txt ../ch1/testdata/addressbook.txt
+escape_test.out
+atoi_test.out
+shellsort_test.out
+reverse_test.out
+expand_test.out
+itoa_test.out
+itoa2_test.out
+itoa3_test.out
+itob_test.out
+trim_test.out

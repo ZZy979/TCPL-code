@@ -37,16 +37,30 @@ $ ./hello_world.out
 ```bash
 $ make
 ```
-
-单元测试
-```bash
-$ make test
-```
+既可以在根目录下运行，也可以在每章目录下运行
 
 删除输出文件
 ```bash
 $ make clean
 ```
+
+# 单元测试
+每章目录下的testdata/tests.txt文件配置要运行的单元测测试，每行的格式为
+```
+target [output_file] [input_file] [args]
+```
+
+例如：
+```
+foo_test.out testdata/foo_output.txt testdata/foo_input.txt -x -y
+```
+其中，如果指定了`output_file`，则通过比较程序的标准输出和指定的文件内容进行测试，否则仅判断程序的返回码是否为0。
+
+单元测试运行方式
+```bash
+$ make test
+```
+既可以在根目录下运行，也可以在每章目录下运行
 
 # 代码目录
 ## 第1章 导言
