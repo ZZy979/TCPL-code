@@ -1,0 +1,16 @@
+getline_test.out /dev/null testdata/Rubaiyat.txt
+strindex_test.out
+grep.out testdata/grep_output.txt testdata/Rubaiyat.txt
+grep.out /dev/null testdata/grep_input2.txt
+grep.out /dev/null
+strrindex_test.out
+atof_test.out
+rudimentary_calculator.out testdata/rudimentary_calculator_output.txt testdata/rudimentary_calculator_input.txt
+atof2_test.out
+ungets_test.out /dev/null testdata/123.txt
+getch2_test.out testdata/getch2_output.txt testdata/123.txt
+printd_test.out testdata/printd_output.txt
+qsort_test.out
+itoa_test.out
+reverse_test.out
+swap_macro_test.out

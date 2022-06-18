@@ -7,6 +7,8 @@ int strrindex(char s[], char t[]) {
     int i, j, k;
     int m = strlen(s), n = strlen(t);
 
+    if (m == 0 || n == 0)
+        return -1;
     for (i = m - 1; i > 0; --i) {
         for (j = i, k = n - 1; k >= 0 && s[j] == t[k]; --j, --k)
             ;

@@ -7,6 +7,9 @@ $(target): $(objects)
 
 $(objects): calc.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

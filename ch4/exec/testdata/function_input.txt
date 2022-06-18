@@ -1,0 +1,10 @@
+1.57 sin
+3.14 cos
+1.57 tan
+1 exp
+2 log 10 log /
+-2 exp log
+2 sqrt
+-2 fabs
+2 3 pow
+3 0.5 pow

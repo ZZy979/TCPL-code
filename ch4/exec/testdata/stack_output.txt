@@ -1,0 +1,12 @@
+	1
+	2
+	-1
+	4
+	5
+	9
+	-9
+	25
+	1.25
+error: stack empty
+error: stack empty
+	0

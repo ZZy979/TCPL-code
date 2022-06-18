@@ -1,9 +1,12 @@
-HEADERS = $(filter-out swap_macro.h,$(wildcard *.h))
-TARGETS = $(HEADERS:.h=.o) grep.out rudimentary_calculator.out atof2.o getch2.o
+HEADERS = $(wildcard *.h)
+FUNC_TARGETS = $(HEADERS:.h=.o) atof2.o
+EXEC_TARGETS = grep.out rudimentary_calculator.out
+TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS)
+TESTS = $(FUNC_TARGETS:.o=_test.out)
 SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi
 
-all: $(TARGETS)
+all: $(TARGETS) $(TESTS)
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir; \
 	done
@@ -19,11 +22,28 @@ atof2.o: atof2.c atof.h
 grep.out: grep.o getline.o strindex.o
 rudimentary_calculator.out: rudimentary_calculator.o getline.o atof.o
 
+%_test.out: %_test.o %.o
+	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+
+ungets_test.out: ungets_test.o ungets.o reverse_polish_calculator/getch.o
+
+atof2_test.out: atof2_test.o atof2.o
+	$(CC) -o $@ $(LDFLAGS) $^ -lm
+
+itoa_test.out: ../ch3/itoa_test.o itoa.o
+	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+
+reverse_test.out: ../ch3/reverse_test.o reverse.o
+	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)
 
 test: all
 	@bash ../test.sh testdata/tests.txt
+	for dir in $(SUBDIRS); do \
+	  $(MAKE) -C $$dir test; \
+	done
 
 clean:
 	$(RM) *.o *.out

@@ -1,0 +1,6 @@
+a 4 =
+a 5 *    
+a 3 = b 4 = +
+a 2 pow b 2 pow + sqrt
+_ 1 +
+A 1 +

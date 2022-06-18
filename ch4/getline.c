@@ -4,7 +4,7 @@
 
 /* getline：将一行读入到line中并返回其长度 */
 int getline(char line[], int lim) {
-    int c, i;
+    int c = EOF, i;
 
     i = 0;
     while (--lim > 0 && (c = getchar()) != EOF && c != '\n')

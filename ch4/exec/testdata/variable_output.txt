@@ -1,0 +1,8 @@
+	4
+	20
+	7
+	5
+	6
+error: invalid identifier A
+error: stack empty
+	1
