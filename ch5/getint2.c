@@ -21,9 +21,9 @@ int getint(int *pn) {
         if (!isdigit(next)) {
             ungetch(next);
             ungetch(c);
+            return 0;
         }
-        else
-            c = next;
+        c = next;
     }
     for (*pn = 0; isdigit(c); c = getch())
         *pn = 10 * *pn + (c - '0');

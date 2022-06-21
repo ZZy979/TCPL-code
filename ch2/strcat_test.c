@@ -1,5 +1,4 @@
 #include <assert.h>
-#include <string.h>
 
 #include "strcat.h"
 
@@ -8,6 +7,8 @@ typedef struct {
     char t[20];
     char expected[40];
 } TESTCASE;
+
+int strcmp(const char *, const char *);
 
 int main() {
     TESTCASE test_cases[] = {
@@ -19,7 +20,7 @@ int main() {
     int i;
 
     for (i = 0; i < 4; ++i) {
-        strcat_(test_cases[i].s, test_cases[i].t);
+        strcat(test_cases[i].s, test_cases[i].t);
         assert(strcmp(test_cases[i].s, test_cases[i].expected) == 0);
     }
     return 0;

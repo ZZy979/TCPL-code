@@ -8,6 +8,9 @@ $(target): $(objects)
 main.o: lineio.h ../sort/qsort.h
 lineio.o: lineio.h ../../ch4/getline.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

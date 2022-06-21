@@ -9,6 +9,9 @@ main.o: ../sort/lineio.h qsort.h numcmp.h
 qsort.o: qsort.h
 numcmp.o: numcmp.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

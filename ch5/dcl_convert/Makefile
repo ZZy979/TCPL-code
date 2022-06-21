@@ -17,6 +17,9 @@ undcl.o: lexer.h
 lexer.o: lexer.h ../getch.h
 parser.o: parser.h lexer.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(dcl_target) $(undcl_target) $(sort $(dcl_objects) $(undcl_objects))
 

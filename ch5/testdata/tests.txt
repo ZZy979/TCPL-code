@@ -1,0 +1,41 @@
+getch_test.out /dev/null testdata/123.txt
+getint_test.out /dev/null testdata/getint_input.txt
+getint2_test.out /dev/null testdata/getint_input.txt
+getfloat_test.out /dev/null testdata/getfloat_input.txt
+strlen_test.out
+alloc_test.out
+strlen2_test.out
+strcpy_test.out
+strcpy2_test.out
+strcpy3_test.out
+strcpy4_test.out
+strcmp_test.out
+strcmp2_test.out
+strcat_test.out
+strend_test.out
+strncpy_test.out
+strncat_test.out
+strncmp_test.out
+date_conversion_test.out
+date_conversion2_test.out
+month_name_test.out
+date_conversion3_test.out
+echo.out testdata/hello_world.txt /dev/null hello, world!
+echo.out testdata/newline.txt
+echo_v2.out testdata/hello_world.txt /dev/null hello, world!
+echo_v2.out testdata/newline.txt
+find.out testdata/find_usage.txt
+find.out ../ch4/testdata/grep_output.txt ../ch4/testdata/Rubaiyat.txt ould
+find.out testdata/find_and_output.txt ../ch4/testdata/Rubaiyat.txt and
+find.out /dev/null ../ch4/testdata/Rubaiyat.txt xxxxx
+find_v2.out testdata/find_v2_usage.txt
+find_v2.out ../ch4/testdata/grep_output.txt ../ch4/testdata/Rubaiyat.txt ould
+find_v2.out testdata/find_v2_ould_n.txt ../ch4/testdata/Rubaiyat.txt -n ould
+find_v2.out testdata/find_v2_ould_x.txt ../ch4/testdata/Rubaiyat.txt -x ould
+find_v2.out testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -n -x ould
+find_v2.out testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -x -n ould
+find_v2.out testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -nx ould
+find_v2.out testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -xn ould
+find_v2.out ../ch4/testdata/Rubaiyat.txt ../ch4/testdata/Rubaiyat.txt -x xxxxx
+find_v2.out /dev/null ../ch4/testdata/Rubaiyat.txt -x e
+find_v2.out testdata/find_v2_illegal_option.txt ../ch4/testdata/Rubaiyat.txt -nb ould

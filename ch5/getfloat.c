@@ -6,7 +6,7 @@
 #include "getch.h"
 
 /* getfloat：将输入中的下一个浮点数赋值给*pf */
-int getfloat(float* pf) {
+int getfloat(float *pf) {
     int c, sign;
     float power;
 

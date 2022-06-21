@@ -1,0 +1,8 @@
+sort.out ../sort/testdata/abc_sorted.txt ../sort/testdata/abc.txt
+sort.out ../sort/testdata/numbers_sorted.txt ../sort/testdata/numbers.txt
+sort.out ../sort/testdata/hexdigits_sorted.txt ../sort/testdata/hexdigits.txt
+sort.out ../sort/testdata/error.txt /dev/zero
+sort.out /dev/null
+sort.out testdata/numbers_sorted.txt ../sort/testdata/numbers.txt -n
+sort.out ../sort/testdata/numbers_sorted.txt ../sort/testdata/numbers.txt abc
+sort.out ../sort/testdata/numbers_sorted.txt ../sort/testdata/numbers.txt -s -n

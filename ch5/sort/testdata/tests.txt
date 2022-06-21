@@ -1,0 +1,5 @@
+sort.out testdata/abc_sorted.txt testdata/abc.txt
+sort.out testdata/numbers_sorted.txt testdata/numbers.txt
+sort.out testdata/hexdigits_sorted.txt testdata/hexdigits.txt
+sort.out testdata/error.txt /dev/zero
+sort.out /dev/null

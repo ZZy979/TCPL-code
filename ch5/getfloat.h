@@ -1,3 +1,3 @@
 #pragma once
 
-int getfloat(float* pf);
+int getfloat(float *pf);

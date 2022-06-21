@@ -1,0 +1,2 @@
+dcl.out testdata/dcl_output.txt testdata/dcl_input.txt
+undcl.out testdata/undcl_output.txt testdata/undcl_input.txt

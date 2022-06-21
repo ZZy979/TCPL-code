@@ -1,5 +1,5 @@
 x int
-argc * * char
+argv * * char
 daytab * [13] int
 daytab [13] * int
 comp () * void

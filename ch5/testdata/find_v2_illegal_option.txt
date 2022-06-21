@@ -1,0 +1,2 @@
+find: illegal option b
+Usage: find -x -n pattern
