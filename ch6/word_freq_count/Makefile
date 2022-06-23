@@ -8,6 +8,9 @@ $(target): $(objects)
 main.o: tnode.h ../getword.h
 tnode.o: tnode.h ../strdup.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

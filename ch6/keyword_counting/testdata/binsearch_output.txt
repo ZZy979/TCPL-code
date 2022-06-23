@@ -1,0 +1,7 @@
+   1 char
+   2 else
+   2 if
+   4 int
+   2 return
+   1 struct
+   1 while

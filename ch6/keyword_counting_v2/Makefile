@@ -8,6 +8,9 @@ $(target): $(objects)
 main.o: ../keyword_counting/key.h ../getword.h binsearch.h
 binsearch.o: binsearch.h ../keyword_counting/key.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

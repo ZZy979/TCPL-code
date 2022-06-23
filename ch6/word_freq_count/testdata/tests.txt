@@ -1,0 +1,3 @@
+count_word.out testdata/main_output.txt main.c
+count_word.out testdata/tnode_output.txt tnode.c
+count_word.out /dev/null

@@ -9,6 +9,9 @@ main.o: key.h ../getword.h binsearch.h
 key.o: key.h
 binsearch.o: binsearch.h key.h
 
+test: $(target)
+	@bash ../../test.sh testdata/tests.txt
+
 clean:
 	$(RM) $(target) $(objects)
 

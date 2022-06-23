@@ -1,0 +1,6 @@
+   1 char
+   1 for
+   3 if
+   2 int
+   1 return
+   1 while
