@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
                 fclose(fp);
             }
     if (ferror(stdout)) {
-        fprintf(stderr, "%s: error writinf stdout\n", prog);
+        fprintf(stderr, "%s: error writing stdout\n", prog);
         exit(2);
     }
     exit(0);

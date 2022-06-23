@@ -1,0 +1,13 @@
+lower.out testdata/lower_output.txt testdata/lower_input.txt
+lower.out /dev/null
+minprintf_test.out testdata/minprintf_output.txt
+rudimentary_calculator.out testdata/rudimentary_calculator_output.txt ../ch4/testdata/rudimentary_calculator_input.txt
+filecopy_test.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt
+filecopy_test.out /dev/null
+cat.out testdata/cat_output.txt /dev/null ../ch5/testdata/123.txt ../ch5/testdata/hello_world.txt
+cat.out testdata/cat_error.txt /dev/null ../ch5/testdata/hello_world.txt not_exist.txt
+cat.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt
+cat_v2.out testdata/cat_output.txt /dev/null ../ch5/testdata/123.txt ../ch5/testdata/hello_world.txt
+cat_v2.out ../ch5/testdata/hello_world.txt /dev/null ../ch5/testdata/hello_world.txt not_exist.txt
+cat_v2.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt
+getline_test.out /dev/null ../ch4/testdata/Rubaiyat.txt

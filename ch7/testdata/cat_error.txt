@@ -1,0 +1,2 @@
+hello, world!
+cat: can't open not_exist.txt
