@@ -1,12 +1,12 @@
 HEADERS = $(wildcard *.h)
 FUNC_TARGETS = $(HEADERS:.h=.o) atof2.o
 EXEC_TARGETS = grep.out rudimentary_calculator.out
-TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS)
-TESTS = $(FUNC_TARGETS:.o=_test.out)
+TEST_TARGETS = $(FUNC_TARGETS:.o=_test.out)
+TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS) $(TEST_TARGETS)
 SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi
 
-all: $(TARGETS) $(TESTS)
+all: $(TARGETS)
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir; \
 	done
@@ -17,24 +17,24 @@ all: $(TARGETS) $(TESTS)
 atof2.o: atof2.c atof.h
 
 %.out: %.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 grep.out: grep.o getline.o strindex.o
 rudimentary_calculator.out: rudimentary_calculator.o getline.o atof.o
 
 %_test.out: %_test.o %.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 ungets_test.out: ungets_test.o ungets.o reverse_polish_calculator/getch.o
 
 atof2_test.out: atof2_test.o atof2.o
-	$(CC) -o $@ $(LDFLAGS) $^ -lm
+	$(CC) -o $@ $^ -lm
 
 itoa_test.out: ../ch3/itoa_test.o itoa.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 reverse_test.out: ../ch3/reverse_test.o reverse.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 $(addsuffix %,$(SUBDIRS)):
 	$(MAKE) -C $(@D) $(@F)

@@ -1,11 +1,11 @@
 HEADERS = $(wildcard *.h)
 FUNC_TARGETS = $(HEADERS:.h=.o) itoa2.o
 EXEC_TARGETS = exec3-1.out character_counting_switch.out
-TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS)
-TESTS = $(FUNC_TARGETS:.o=_test.out)
+TEST_TARGETS = $(FUNC_TARGETS:.o=_test.out)
+TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS) $(TEST_TARGETS)
 CFLAGS = -ansi
 
-all: $(TARGETS) $(TESTS)
+all: $(TARGETS)
 
 %.o: %.c %.h
 	$(CC) -c -o $@ $(CFLAGS) $<
@@ -16,13 +16,13 @@ itoa3.o: itoa3.c itoa3.h reverse.h
 itob.o: itob.c itob.h reverse.h
 
 %.out: %.o
-	$(CC) -o $@ $(LDFLAGS) $< $(LDLIBS)
+	$(CC) -o $@ $^
 
 exec3-1.out: exec3-1.o binsearch.o binsearch2.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 %_test.out: %_test.o %.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 itoa_test.out: itoa_test.o itoa.o reverse.o
 itoa2_test.out: itoa2_test.o itoa2.o reverse.o

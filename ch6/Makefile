@@ -1,12 +1,12 @@
 HEADERS = $(wildcard *.h)
 FUNC_TARGETS = $(HEADERS:.h=.o)
 EXEC_TARGETS =
-TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS)
-TESTS = $(FUNC_TARGETS:.o=_test.out)
+TEST_TARGETS = $(FUNC_TARGETS:.o=_test.out)
+TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS) $(TEST_TARGETS)
 SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
 CFLAGS = -ansi
 
-all: $(TARGETS) $(TESTS)
+all: $(TARGETS)
 	for dir in $(SUBDIRS); do \
 	  $(MAKE) -C $$dir; \
 	done
@@ -19,10 +19,10 @@ getword.o: getword.c getword.h ../ch5/getch.h
 hash_table.o: hash_table.c hash_table.h strdup.h
 
 %.out: %.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 %_test.out: %_test.o %.o
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 getword_test.out: getword_test.o getword.o ../ch5/getch.o
 hash_table_test.out: hash_table_test.o hash_table.o strdup.o
