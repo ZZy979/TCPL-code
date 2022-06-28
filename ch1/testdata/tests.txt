@@ -35,3 +35,5 @@ exec1-19.out testdata/exec1-19_output.txt testdata/addressbook.txt
 print_longest_line_extern.out testdata/print_longest_line_output.txt testdata/addressbook.txt
 exec1-20.out testdata/exec1-20_output.txt testdata/exec1-20_input.txt
 exec1-21.out testdata/exec1-21_output.txt testdata/exec1-21_input.txt
+exec1-22.out testdata/exec1-22_output.txt testdata/exec1-22_input.txt
+exec1-23.out testdata/exec1-23_output.c testdata/exec1-23_input.c

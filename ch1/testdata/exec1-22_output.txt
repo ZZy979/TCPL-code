@@ -1,0 +1,25 @@
+The best way to learn a programming
+language is by writing programs.
+Typically, the first program beginners
+write is a program called "Hello World",
+which simply prints "Hello World" to
+your computer screen.
+
+A short line.
+
+This line exactly does not need to wrap.
+
+And this line exactly needs to
+wrap......
+
+This is
+a-very-very-very-very-very-very-very-lon
+g-word
+
+	White spaces at beginning are kept,
+and those at line wrap are dropped.
+
+
+So
+many
+spaces!
