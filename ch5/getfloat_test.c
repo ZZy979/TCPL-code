@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 #include "getfloat.h"
-#include "getch.h"
+#include "../ch4/getch.h"
 
 int main() {
     /* 输入文件：testdata/getfloat_input.txt */

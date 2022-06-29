@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-#include "../getch.h"
+#include "../../ch4/getch.h"
 
 int tokentype;          /* 最后一个记号的类型 */
 char token[MAXTOKEN];   /* 最后一个记号字符串 */

@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "getch2.h"
+#include "getch.h"
 
 int main() {
     /* 输入文件：testdata/123.txt */

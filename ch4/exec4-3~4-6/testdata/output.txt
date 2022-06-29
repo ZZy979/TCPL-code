@@ -1,0 +1,11 @@
+	579
+	-333
+	56088
+	0.26973684
+	-9
+error: zero divisor
+	1
+error: unknown command &
+	2
+error: invalid identifier abc
+	1

@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#include "getch.h"
+#include "../ch4/getch.h"
 
 /* getint：将输入中的下一个整数赋值给*pn */
 int getint(int *pn) {

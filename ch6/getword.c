@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#include "../ch5/getch.h"
+#include "../ch4/getch.h"
 
 /* getword：从输入中读取下一个单词或字符 */
 int getword(char *word, int lim) {

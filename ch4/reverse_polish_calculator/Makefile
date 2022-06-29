@@ -3,7 +3,7 @@ objects = main.o stack.o getop.o getch.o
 CFLAGS = -ansi
 
 $(target): $(objects)
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 $(objects): calc.h
 

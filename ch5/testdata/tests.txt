@@ -1,4 +1,3 @@
-getch_test.out /dev/null testdata/123.txt
 getint_test.out /dev/null testdata/getint_input.txt
 getint2_test.out /dev/null testdata/getint_input.txt
 getfloat_test.out /dev/null testdata/getfloat_input.txt

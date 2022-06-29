@@ -7,6 +7,7 @@ strrindex_test.out
 atof_test.out
 rudimentary_calculator.out testdata/rudimentary_calculator_output.txt testdata/rudimentary_calculator_input.txt
 atof2_test.out
+getch_test.out /dev/null testdata/123.txt
 ungets_test.out /dev/null testdata/123.txt
 getch2_test.out testdata/getch2_output.txt testdata/123.txt
 printd_test.out testdata/printd_output.txt

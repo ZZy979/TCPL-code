@@ -16,9 +16,9 @@ all: $(TARGETS)
 	$(CC) -c -o $@ $(CFLAGS) $<
 
 # Make不方便的地方：想复用ch4/reverse_polish_calculator/getch.c就很困难
-getint.o: getint.c getint.h getch.h
-getint2.o: getint2.c getint.h getch.h
-getfloat.o: getfloat.c getfloat.h getch.h
+getint.o: getint.c getint.h ../ch4/getch.h
+getint2.o: getint2.c getint.h ../ch4/getch.h
+getfloat.o: getfloat.c getfloat.h ../ch4/getch.h
 strlen2.o: strlen2.c strlen.h
 strcpy2.o: strcpy2.c strcpy.h
 strcpy3.o: strcpy3.c strcpy.h
@@ -38,9 +38,9 @@ find_v2.out: find_v2.o ../ch4/getline.o
 %_test.out: %_test.o %.o
 	$(CC) -o $@ $^
 
-getint_test.out: getint_test.o getint.o getch.o
-getint2_test.out: getint2_test.o getint2.o getch.o
-getfloat_test.out: getfloat_test.o getfloat.o getch.o
+getint_test.out: getint_test.o getint.o ../ch4/getch.o
+getint2_test.out: getint2_test.o getint2.o ../ch4/getch.o
+getfloat_test.out: getfloat_test.o getfloat.o ../ch4/getch.o
 
 strlen_test.out: ../ch2/strlen_test.o strlen.o
 	$(CC) -o $@ $^

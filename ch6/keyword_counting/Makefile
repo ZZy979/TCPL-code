@@ -1,9 +1,9 @@
 target = count_keyword.out
-objects = main.o key.o ../getword.o binsearch.o ../../ch5/getch.o
+objects = main.o key.o ../getword.o binsearch.o ../../ch4/getch.o
 CFLAGS = -ansi
 
 $(target): $(objects)
-	$(CC) -o $@ $(LDFLAGS) $^ $(LDLIBS)
+	$(CC) -o $@ $^
 
 main.o: key.h ../getword.h binsearch.h
 key.o: key.h

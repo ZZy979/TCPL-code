@@ -1,3 +1,5 @@
+#include "getch.h"
+
 #include <stdio.h>
 
 int buf = EOF;

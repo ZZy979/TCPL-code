@@ -15,7 +15,7 @@ all: $(TARGETS)
 	$(CC) -c -o $@ $(CFLAGS) $<
 
 rect.o: rect.c rect.h point.h
-getword.o: getword.c getword.h ../ch5/getch.h
+getword.o: getword.c getword.h ../ch4/getch.h
 hash_table.o: hash_table.c hash_table.h strdup.h
 
 %.out: %.o
@@ -24,7 +24,7 @@ hash_table.o: hash_table.c hash_table.h strdup.h
 %_test.out: %_test.o %.o
 	$(CC) -o $@ $^
 
-getword_test.out: getword_test.o getword.o ../ch5/getch.o
+getword_test.out: getword_test.o getword.o ../ch4/getch.o
 hash_table_test.out: hash_table_test.o hash_table.o strdup.o
 
 $(addsuffix %,$(SUBDIRS)):

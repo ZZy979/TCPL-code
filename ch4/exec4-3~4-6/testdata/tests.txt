@@ -1,3 +1,5 @@
+reverse_polish_calculator.out testdata/output.txt ../reverse_polish_calculator/testdata/input.txt
+reverse_polish_calculator.out /dev/null
 reverse_polish_calculator.out testdata/stack_output.txt testdata/stack_input.txt
 reverse_polish_calculator.out testdata/function_output.txt testdata/function_input.txt
 reverse_polish_calculator.out testdata/variable_output.txt testdata/variable_input.txt
