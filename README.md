@@ -200,6 +200,8 @@ $ make test
 * [练习4-3~4-6](ch4/exec4-3~4-6)：扩充逆波兰计算器
 * [练习4-7](ch4/ungets.c)
 * [练习4-8](ch4/getch2.c)
+* [练习4-9](ch4/getch3.c)
+* [练习4-10](ch4/exec4-10/getop.c)
 
 ### 4.10 递归
 * [printd函数](ch4/printd.c)

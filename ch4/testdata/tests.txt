@@ -10,6 +10,7 @@ atof2_test.out
 getch_test.out /dev/null testdata/123.txt
 ungets_test.out /dev/null testdata/123.txt
 getch2_test.out testdata/getch2_output.txt testdata/123.txt
+getch3_test.out /dev/null testdata/123.txt
 printd_test.out testdata/printd_output.txt
 qsort_test.out
 itoa_test.out

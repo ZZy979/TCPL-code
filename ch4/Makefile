@@ -1,5 +1,5 @@
 HEADERS = $(wildcard *.h)
-FUNC_TARGETS = $(HEADERS:.h=.o) atof2.o getch2.o
+FUNC_TARGETS = $(HEADERS:.h=.o) atof2.o getch2.o getch3.o
 EXEC_TARGETS = grep.out rudimentary_calculator.out
 TEST_TARGETS = $(FUNC_TARGETS:.o=_test.out)
 TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS) $(TEST_TARGETS)
@@ -16,6 +16,7 @@ all: $(TARGETS)
 
 atof2.o: atof2.c atof.h
 getch2.o: getch2.c getch.h
+getch3.o: getch3.c getch.h
 
 %.out: %.o
 	$(CC) -o $@ $^
