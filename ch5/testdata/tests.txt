@@ -21,8 +21,10 @@ month_name_test.out
 date_conversion3_test.out
 echo.out testdata/hello_world.txt /dev/null hello, world!
 echo.out testdata/newline.txt
+echo.out testdata/special_characters.txt /dev/null ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 echo_v2.out testdata/hello_world.txt /dev/null hello, world!
 echo_v2.out testdata/newline.txt
+echo_v2.out testdata/special_characters.txt /dev/null ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 find.out testdata/find_usage.txt
 find.out ../ch4/testdata/grep_output.txt ../ch4/testdata/Rubaiyat.txt ould
 find.out testdata/find_and_output.txt ../ch4/testdata/Rubaiyat.txt and

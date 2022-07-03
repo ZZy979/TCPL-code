@@ -5,6 +5,7 @@ if [ $# -eq 0 ]; then
     exit
 fi
 
+set -f  # 禁止自动扩展*
 run=0
 failed=0
 while read -r target output_file input_file args; do
