@@ -40,3 +40,13 @@ find_v2.out testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -xn ould
 find_v2.out ../ch4/testdata/Rubaiyat.txt ../ch4/testdata/Rubaiyat.txt -x xxxxx
 find_v2.out /dev/null ../ch4/testdata/Rubaiyat.txt -x e
 find_v2.out testdata/find_v2_illegal_option.txt ../ch4/testdata/Rubaiyat.txt -nb ould
+expr.out testdata/expr_output.txt /dev/null 1 2 - 4 5 + *
+expr.out testdata/expr_output2.txt /dev/null 2 3 4 + *
+expr.out testdata/expr_output3.txt /dev/null 0.456721 10 * 0.822135 9 * 0.080252 7 * 0 0.640293 - 2 * 0 0.792799 - 4 * + + + + 10 9 7 2 4 + + + + /
+expr.out testdata/expr_output4.txt /dev/null 3.1415926
+expr.out testdata/expr_output5.txt /dev/null -8
+expr.out testdata/expr_output6.txt /dev/null -2.41 3.35 + -.79 .64 - /
+expr.out testdata/expr_zero_divisor.txt /dev/null 1 0 /
+expr.out testdata/expr_unknown_command.txt /dev/null 1 2 &
+expr.out testdata/expr_unknown_command2.txt /dev/null abc
+expr.out testdata/expr_no_operands.txt

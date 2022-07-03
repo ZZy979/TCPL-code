@@ -1,8 +1,12 @@
-	579
-	-333
-	56088
-	0.26973684
 	-9
+	14
+	0.25238772
+	3.1415926
+error: stack empty
+error: stack empty
+	8
+error: stack empty
+	-38.4
 error: zero divisor
 	1
 error: unknown command &
