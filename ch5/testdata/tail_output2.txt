@@ -1,0 +1,5 @@
+name: Bob
+email: bob@example.com
+phone:
+	home: 5193028
+	work: 6208205

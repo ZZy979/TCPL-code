@@ -50,3 +50,13 @@ expr.out testdata/expr_zero_divisor.txt /dev/null 1 0 /
 expr.out testdata/expr_unknown_command.txt /dev/null 1 2 &
 expr.out testdata/expr_unknown_command2.txt /dev/null abc
 expr.out testdata/expr_no_operands.txt
+tail.out testdata/tail_output.txt ../ch1/testdata/addressbook.txt
+tail.out testdata/tail_output.txt ../ch1/testdata/addressbook.txt -10
+tail.out testdata/tail_output2.txt ../ch1/testdata/addressbook.txt -5
+tail.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt -100
+tail.out /dev/null ../ch1/testdata/addressbook.txt -0
+tail.out testdata/tail_error.txt ../ch1/testdata/addressbook.txt --1
+tail.out testdata/tail_error.txt ../ch1/testdata/addressbook.txt -1001
+tail.out /dev/null ../ch1/testdata/addressbook.txt -a
+tail.out testdata/tail_output.txt ../ch1/testdata/addressbook.txt abc
+tail.out /dev/null

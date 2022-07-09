@@ -1,7 +1,7 @@
 HEADERS = $(wildcard *.h)
 FUNC_TARGETS = $(HEADERS:.h=.o) getint2.o strlen2.o strcpy2.o strcpy3.o strcpy4.o strcmp2.o \
 	date_conversion2.o date_conversion3.o
-EXEC_TARGETS = echo.out echo_v2.out find.out find_v2.out expr.out
+EXEC_TARGETS = echo.out echo_v2.out find.out find_v2.out expr.out tail.out
 TEST_TARGETS = $(FUNC_TARGETS:.o=_test.out)
 TARGETS = $(FUNC_TARGETS) $(EXEC_TARGETS) $(TEST_TARGETS)
 SUBDIRS = $(filter-out testdata/,$(shell ls -d */))
@@ -28,6 +28,7 @@ date_conversion2.o: date_conversion2.c date_conversion.h
 date_conversion3.o: date_conversion3.c date_conversion.h
 find.o: find.c ../ch4/getline.h
 find_v2.o: find_v2.c ../ch4/getline.h
+tail.o: tail.c ../ch4/getline.h
 
 %.out: %.o
 	$(CC) -o $@ $^
@@ -35,6 +36,7 @@ find_v2.o: find_v2.c ../ch4/getline.h
 find.out: find.o ../ch4/getline.o
 find_v2.out: find_v2.o ../ch4/getline.o
 expr.out: expr.o ../ch4/reverse_polish_calculator/stack.o
+tail.out: tail.o ../ch4/getline.o
 
 %_test.out: %_test.o %.o
 	$(CC) -o $@ $^

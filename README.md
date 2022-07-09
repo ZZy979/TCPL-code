@@ -45,7 +45,7 @@ $ make clean
 ```
 
 # 单元测试
-每章目录下的testdata/tests.txt文件配置要运行的单元测测试，每行的格式为
+每章目录下的testdata/tests.txt文件配置要运行的单元测试，每行的格式为
 ```
 target [output_file] [input_file] [args]
 ```
@@ -261,6 +261,7 @@ $ make test
 * [打印所有与模式匹配的行（支持选项参数）](ch5/find_v2.c)
 * [练习5-10](ch5/expr.c)
 * [练习5-11~5-12](ch5/exec5-11~5-12)
+* [练习5-13](ch5/tail.c)
 
 ### 5.11 指向函数的指针
 * [排序文本行（版本2）](ch5/sort_v2)
