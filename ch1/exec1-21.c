@@ -15,18 +15,17 @@ int main() {
     while ((c = getchar()) != EOF) {
         if (c == ' ')
             ++nspace;
-        else if (c == '\n') {
-            putchar(c);
-            n = nspace = 0;
-        }
         else {
-            if (nspace > 0) {
-                print_space(n, nspace);
-                n += nspace;
-            }
-            putchar(c);
-            ++n;
+            print_space(n, nspace);
+            n += nspace;
             nspace = 0;
+            putchar(c);
+            if (c == '\n')
+                n = 0;
+            else if (c == '\t')
+                n = n / TABSIZE * TABSIZE + TABSIZE;
+            else
+                ++n;
         }
     }
     return 0;
@@ -34,14 +33,13 @@ int main() {
 
 /**
  * 从第start列的位置打印制表符和空格，使其宽度等于width个字符
- * 上一个制表符终止位last_tab_stop = 不超过start + width的TABSIZE的最大倍数
+ * 最后一个制表符终止位last_tab_stop = 不超过start + width的TABSIZE的最大倍数
  *   = (start + width) / TABSIZE * TABSIZE
  *   = start + width - (start + width) % TABSIZE
  * 如果last_tab_stop <= start则直接打印width个空格；
  * 否则打印ntab个制表符和nspace个空格，其中
  *   ntab = (last_tab_stop - start) / TABSIZE上取整（浮点数除法）
- *   nspace = start + width - last_tab_stop
- *          = (start + width) % TABSIZE
+ *   nspace = start + width - last_tab_stop = (start + width) % TABSIZE
  */
 void print_space(int start, int width) {
     int last_tab_stop = (start + width) / TABSIZE * TABSIZE;
@@ -52,7 +50,7 @@ void print_space(int start, int width) {
             putchar(' ');
     else {
         ntab = (int) ceil((double) (last_tab_stop - start) / TABSIZE);
-        nspace = (start + width) % TABSIZE;
+        nspace = start + width - last_tab_stop;
         for (i = 0; i < ntab; ++i)
             putchar('\t');
         for (i = 0; i < nspace; ++i)

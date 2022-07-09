@@ -4,15 +4,15 @@
 
 /* detab：将输入中的制表符替换成适当数目的空格 */
 int main() {
-    int c, i;
-    int n;  /* 当前字符列数 */
+    int c;
+    int n = 0;  /* 当前字符列数 */
 
-    n = 0;
     while ((c = getchar()) != EOF) {
         if (c == '\t') {
-            for (i = 0; i < TABSIZE - n % TABSIZE; ++i)
+            do {
                 putchar(' ');
-            n += i;
+                ++n;
+            } while (n % TABSIZE != 0);
         }
         else if (c == '\n') {
             putchar(c);

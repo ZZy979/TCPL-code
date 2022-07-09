@@ -1,0 +1,28 @@
+exec5-11_detab.out ../../ch1/testdata/exec1-20_output.txt ../../ch1/testdata/exec1-20_input.txt
+exec5-11_detab.out testdata/exec5-11_detab_output.txt ../../ch1/testdata/exec1-20_input.txt 8 16 24 32 40 48 56 64 72 80 88 96
+exec5-11_detab.out testdata/exec5-11_detab_output2.txt ../../ch1/testdata/exec1-20_input.txt 2 6 14
+exec5-11_detab.out /dev/null
+exec5-11_entab.out ../../ch1/testdata/exec1-21_output.txt ../../ch1/testdata/exec1-21_input.txt
+exec5-11_entab.out testdata/exec5-11_entab_output.txt ../../ch1/testdata/exec1-21_input.txt 8 16 24 32 40 48 56 64 72 80 88 96
+exec5-11_entab.out testdata/exec5-11_entab_output2.txt ../../ch1/testdata/exec1-21_input.txt 2 6 14
+exec5-11_entab.out /dev/null
+exec5-12_detab.out ../../ch1/testdata/exec1-20_output.txt ../../ch1/testdata/exec1-20_input.txt
+exec5-12_detab.out ../../ch1/testdata/exec1-20_output.txt ../../ch1/testdata/exec1-20_input.txt -0 +4
+exec5-12_detab.out testdata/exec5-11_detab_output.txt ../../ch1/testdata/exec1-20_input.txt -0 +8
+exec5-12_detab.out testdata/exec5-12_detab_output.txt ../../ch1/testdata/exec1-20_input.txt -6 +2
+exec5-12_detab.out testdata/exec5-12_detab_output2.txt ../../ch1/testdata/exec1-20_input.txt -1 +0
+exec5-12_detab.out testdata/exec5-12_detab_output3.txt ../../ch1/testdata/exec1-20_input.txt -4 +1
+exec5-12_detab.out testdata/exec5-12_detab_output2.txt ../../ch1/testdata/exec1-20_input.txt -x +&
+exec5-12_detab.out ../../ch1/testdata/exec1-20_output.txt ../../ch1/testdata/exec1-20_input.txt -0 +4 -h
+exec5-12_detab.out ../../ch1/testdata/exec1-20_output.txt ../../ch1/testdata/exec1-20_input.txt +4 abc
+exec5-12_detab.out /dev/null
+exec5-12_entab.out ../../ch1/testdata/exec1-21_output.txt ../../ch1/testdata/exec1-21_input.txt
+exec5-12_entab.out ../../ch1/testdata/exec1-21_output.txt ../../ch1/testdata/exec1-21_input.txt -0 +4
+exec5-12_entab.out testdata/exec5-11_entab_output.txt ../../ch1/testdata/exec1-21_input.txt -0 +8
+exec5-12_entab.out testdata/exec5-12_entab_output.txt ../../ch1/testdata/exec1-21_input.txt -6 +2
+exec5-12_entab.out ../../ch1/testdata/exec1-21_input.txt ../../ch1/testdata/exec1-21_input.txt -1 +0
+exec5-12_entab.out testdata/exec5-12_entab_output2.txt ../../ch1/testdata/exec1-21_input.txt -4 +1
+exec5-12_entab.out ../../ch1/testdata/exec1-21_input.txt ../../ch1/testdata/exec1-21_input.txt -x +&
+exec5-12_entab.out ../../ch1/testdata/exec1-21_output.txt ../../ch1/testdata/exec1-21_input.txt -0 +4 -h
+exec5-12_entab.out ../../ch1/testdata/exec1-21_output.txt ../../ch1/testdata/exec1-21_input.txt +4 abc
+exec5-12_entab.out /dev/null
