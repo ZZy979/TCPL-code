@@ -1,3 +1,3 @@
 #pragma once
 
-int numcmp(char *s1, char *s2);
+int numcmp(const char *s1, const char *s2);

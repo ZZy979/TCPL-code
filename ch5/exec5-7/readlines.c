@@ -1,4 +1,4 @@
-#include "lineio.h"
+#include "readlines.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -16,12 +16,4 @@ int readlines(char lines[][MAXLEN], int maxlines) {
         else
             lines[nlines++][len - 1] = '\0';    /* 删除换行符 */
     return nlines;
-}
-
-/* writelines：写输出行 */
-void writelines(char *lineptr[], int nlines) {
-    int i;
-
-    for (i = 0; i < nlines; ++i)
-        printf("%s\n", lineptr[i]);
 }

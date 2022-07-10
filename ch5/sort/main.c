@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-#include "lineio.h"
+#include "readlines.h"
+#include "writelines.h"
 #include "qsort.h"
 
 #define MAXLINES 5000       /* 进行排序的最大行数 */

@@ -1,12 +1,13 @@
 target = sort.out
-objects = main.o lineio.o ../alloc.o ../../ch4/getline.o qsort.o
+objects = main.o readlines.o writelines.o qsort.o ../alloc.o ../../ch4/getline.o
 CFLAGS = -ansi
 
 $(target): $(objects)
 	$(CC) -o $@ $^
 
-main.o: lineio.h qsort.h
-lineio.o: lineio.h ../../ch4/getline.h ../alloc.h
+main.o: readlines.h writelines.h qsort.h
+readlines.o: readlines.h ../../ch4/getline.h ../alloc.h
+writelines.o: writelines.h
 qsort.o: qsort.h
 
 # Make不方便的地方：../alloc.o和../../ch4/getline.o是用当前Makefile的隐式规则%o: %c构建的

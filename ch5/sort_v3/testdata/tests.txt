@@ -1,0 +1,15 @@
+sort.out ../sort/testdata/abc_sorted.txt ../sort/testdata/abc.txt
+sort.out ../sort/testdata/numbers_sorted.txt ../sort/testdata/numbers.txt
+sort.out ../sort/testdata/hexdigits_sorted.txt ../sort/testdata/hexdigits.txt
+sort.out ../sort/testdata/error.txt /dev/zero
+sort.out /dev/null
+sort.out ../sort_v2/testdata/numbers_numeric_sorted.txt ../sort/testdata/numbers.txt -n
+sort.out ../sort/testdata/numbers_sorted.txt ../sort/testdata/numbers.txt abc
+sort.out testdata/illegal_option.txt ../sort/testdata/numbers.txt -s -n
+sort.out testdata/abc_reverse_sorted.txt ../sort/testdata/abc.txt -r
+sort.out testdata/numbers_reverse_sorted.txt ../sort/testdata/numbers.txt -r
+sort.out testdata/hexdigits_reverse_sorted.txt ../sort/testdata/hexdigits.txt -r
+sort.out testdata/numbers_numeric_reverse_sorted.txt ../sort/testdata/numbers.txt -n -r
+sort.out testdata/numbers_numeric_reverse_sorted.txt ../sort/testdata/numbers.txt -nr
+sort.out testdata/hexdigits_ignore_case_sorted.txt ../sort/testdata/hexdigits.txt -f
+sort.out testdata/hexdigits_ignore_case_reverse_sorted.txt ../sort/testdata/hexdigits.txt -fr

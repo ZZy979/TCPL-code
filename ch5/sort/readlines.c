@@ -1,6 +1,5 @@
-#include "lineio.h"
+#include "readlines.h"
 
-#include <stdio.h>
 #include <string.h>
 
 #include "../../ch4/getline.h"
@@ -23,12 +22,4 @@ int readlines(char *lineptr[], int maxlines) {
             lineptr[nlines++] = p;
         }
     return nlines;
-}
-
-/* writelines：写输出行 */
-void writelines(char *lineptr[], int nlines) {
-    int i;
-
-    for (i = 0; i < nlines; ++i)
-        printf("%s\n", lineptr[i]);
 }

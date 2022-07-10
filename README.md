@@ -242,7 +242,8 @@ $ make test
 ### 5.6 指针数组以及指向指针的指针
 * [排序文本行](ch5/sort)
     * [main函数](ch5/sort/main.c)
-    * [readlines和writelines函数](ch5/sort/lineio.c)
+    * [readlines函数](ch5/sort/readlines.c)
+    * [writelines函数](ch5/sort/writelines.c)
     * [qsort函数](ch5/sort/qsort.c)
 * [练习5-7](ch5/exec5-7)
 
@@ -268,6 +269,7 @@ $ make test
     * [main函数](ch5/sort_v2/main.c)
     * [qsort函数](ch5/sort_v2/qsort.c)
     * [numcmp函数](ch5/sort_v2/numcmp.c)
+* [练习5-14~5-15](ch5/sort_v3)
 
 ### 5.12 复杂声明
 * [声明转换](ch5/dcl_convert)

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../sort/lineio.h"
+#include "../sort/readlines.h"
+#include "../sort/writelines.h"
 #include "qsort.h"
 #include "numcmp.h"
 

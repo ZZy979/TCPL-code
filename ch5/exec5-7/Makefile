@@ -1,12 +1,12 @@
 target = sort.out
-objects = main.o lineio.o ../../ch4/getline.o ../sort/qsort.o
+objects = main.o readlines.o ../sort/writelines.o ../sort/qsort.o ../../ch4/getline.o
 CFLAGS = -ansi
 
 $(target): $(objects)
 	$(CC) -o $@ $^
 
-main.o: lineio.h ../sort/qsort.h
-lineio.o: lineio.h ../../ch4/getline.h
+main.o: readlines.h ../sort/writelines.h ../sort/qsort.h
+readlines.o: readlines.h ../../ch4/getline.h
 
 test: $(target)
 	@bash ../../test.sh testdata/tests.txt
