@@ -1,0 +1,6 @@
+   1 char
+   2 int
+   4 long
+   1 return
+   1 unsigned
+   1 while

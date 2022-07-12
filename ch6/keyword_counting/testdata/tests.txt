@@ -1,4 +1,5 @@
 count_keyword.out testdata/main_output.txt main.c
 count_keyword.out testdata/key_output.txt key.c
 count_keyword.out testdata/binsearch_output.txt binsearch.c
+count_keyword.out testdata/test_prog_output.txt testdata/test_prog.c
 count_keyword.out /dev/null

@@ -1,5 +1,5 @@
 count_keyword.out ../keyword_counting/testdata/main_output.txt ../keyword_counting/main.c
-count_keyword.out ../keyword_counting/testdata/key_output.txt ../keyword_counting/key.c
+count_keyword.out testdata/key_output.txt ../keyword_counting/key.c
 count_keyword.out ../keyword_counting/testdata/binsearch_output.txt ../keyword_counting/binsearch.c
-count_keyword.out ../keyword_counting/testdata/test_prog_output.txt ../keyword_counting/testdata/test_prog.c
+count_keyword.out testdata/test_prog_output.txt ../keyword_counting/testdata/test_prog.c
 count_keyword.out /dev/null
