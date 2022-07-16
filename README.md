@@ -301,6 +301,7 @@ $ make test
     * [main函数](ch6/word_freq_count/main.c)
     * [tnode结构及操作函数](ch6/word_freq_count/tnode.h)
     * [strdup函数](ch6/strdup.c)
+* [练习6-2](ch6/exec6-2)
 
 ### 6.6 表查找
 * [散列表](ch6/hash_table.c)

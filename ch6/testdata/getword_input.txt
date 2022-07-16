@@ -1,3 +1,8 @@
+The answer is 42.
 print('hello, world!')
 3xy+4yz
 2A1B
+"string constant\r\n"
+/* C-style comment */
+#include <stdio.h>
+word_with_underscore

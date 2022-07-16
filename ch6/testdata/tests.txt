@@ -1,5 +1,6 @@
 point_test.out
 rect_test.out
 getword_test.out /dev/null testdata/getword_input.txt
+getword2_test.out /dev/null testdata/getword_input.txt
 strdup_test.out
 hash_table_test.out

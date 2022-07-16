@@ -1,9 +1,9 @@
-#include "../getword.h"
+#include "getword.h"
 
 #include <stdio.h>
 #include <ctype.h>
 
-#include "../../ch4/getch.h"
+#include "../ch4/getch.h"
 
 /* getword：从输入中读取下一个单词或字符，跳过字符串常量、注释及预处理器控制指令，下划线视为单词的一部分 */
 int getword(char *word, int lim) {
@@ -14,7 +14,7 @@ int getword(char *word, int lim) {
         ;
     if (c != EOF)
         *w++ = c;
-    if (!(isalpha(c) || c == '_' || (c == '/' && (next = getch()) == '*') || c == '#' || c == '\"')) {
+    if (!(isalpha(c) || c == '_' || c == '\"' || (c == '/' && (next = getch()) == '*') || c == '#')) {
         *w = '\0';
         if (next)
             ungetch(next);
@@ -22,26 +22,30 @@ int getword(char *word, int lim) {
     }
     switch (c) {
         case '\"':   /* 字符串常量 */
-            while ((c = getch()) != '\"')
+            while ((*w++ = c = getch()) != '\"')
                 if (c == '\\')
-                    getch();
-            return '\"';
+                    *w++ = getch();
+            break;
         case '/':   /* 注释 */
-            c = getch();
-            while ((next = getch()) != '/' || c != '*')
+            *w++ = next;
+            *w++ = c = getch();
+            while ((*w++ = next = getch()) != '/' || c != '*')
                 c = next;
-            return '/';
+            break;
         case '#':   /* 预处理器控制指令 */
-            while (isalpha(c = getch()))
+            while (isalpha(*w++ = c = getch()))
                 ;
             ungetch(c);
-            return '#';
-    }
-    for (; --lim > 0; w++)
-        if (!isalnum(*w = getch()) && *w != '_') {
-            ungetch(*w);
+            --w;
             break;
-        }
+        default:
+            for (; --lim > 0; w++)
+                if (!isalnum(*w = getch()) && *w != '_') {
+                    ungetch(*w);
+                    break;
+                }
+            break;
+    }
     *w = '\0';
     return word[0];
 }

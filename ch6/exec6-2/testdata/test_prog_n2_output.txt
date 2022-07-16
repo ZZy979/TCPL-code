@@ -1,0 +1,16 @@
+ar: argc argv 
+at: atoll 
+ch: char 
+de: defined 
+h: h 
+in: int int64_t 
+lo: long 
+ma: main 
+pr: printf 
+re: return 
+st: stdio stdlib 
+su: sum 
+ui: uint64_t 
+un: unsigned unsigned_sum 
+wh: while 
+x: x 

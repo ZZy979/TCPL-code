@@ -1,0 +1,10 @@
+group_word.out testdata/test_prog_n6_output.txt ../keyword_counting/testdata/test_prog.c
+group_word.out testdata/test_prog_n6_output.txt ../keyword_counting/testdata/test_prog.c -6
+group_word.out testdata/test_prog_n100_output.txt ../keyword_counting/testdata/test_prog.c -100
+group_word.out testdata/test_prog_n3_output.txt ../keyword_counting/testdata/test_prog.c -3
+group_word.out testdata/test_prog_n2_output.txt ../keyword_counting/testdata/test_prog.c -2
+group_word.out testdata/test_prog_n1_output.txt ../keyword_counting/testdata/test_prog.c -1
+group_word.out testdata/invalid_n.txt ../keyword_counting/testdata/test_prog.c -0
+group_word.out testdata/invalid_n.txt ../keyword_counting/testdata/test_prog.c --2
+group_word.out testdata/invalid_n.txt ../keyword_counting/testdata/test_prog.c -x
+group_word.out /dev/null
