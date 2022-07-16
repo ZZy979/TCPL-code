@@ -1,0 +1,35 @@
+NULL: 16 21 34 
+add: 12 13 26 28 
+alloc: 7 8 17 19 
+char: 13 
+cond: 14 23 25 
+const: 13 
+else: 23 25 27 
+h: 1 3 4 5 
+if: 16 23 25 34 
+include: 1 3 4 5 
+insert: 20 24 
+int: 13 14 
+left: 21 26 26 35 
+lineno: 13 19 20 20 24 24 26 28 37 
+list: 19 19 20 20 24 24 37 37 
+malloc: 9 
+n: 38 
+node: 7 8 8 9 9 13 13 17 19 20 24 33 
+print: 32 33 35 37 39 
+printf: 36 
+putchar: 38 
+return: 9 29 
+right: 21 28 28 39 
+root: 13 16 17 18 19 20 21 21 23 24 26 26 28 28 29 33 34 35 36 37 39 
+s: 36 
+sizeof: 9 
+stdio: 3 
+stdlib: 4 
+strcmp: 23 
+strdup: 18 
+string: 5 
+struct: 8 9 9 13 13 33 
+tree: 1 7 8 8 9 9 13 13 17 32 33 33 35 39 
+void: 8 33 
+word: 12 12 13 13 18 18 23 23 26 26 28 28 36 

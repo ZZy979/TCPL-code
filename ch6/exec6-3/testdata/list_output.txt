@@ -1,0 +1,23 @@
+alloc: 6 7 17 
+d: 28 
+for: 15 27 
+h: 1 3 4 
+head: 12 15 24 27 
+include: 1 3 4 
+insert: 11 12 
+int: 12 
+lineno: 11 12 15 15 18 18 28 
+list: 1 6 7 7 8 8 11 12 12 13 17 23 24 24 25 
+malloc: 8 
+next: 15 15 15 19 19 20 27 27 28 
+node: 6 7 7 8 8 11 12 12 13 17 24 25 
+p: 13 15 15 15 15 15 19 20 25 27 27 27 27 28 
+print: 23 24 
+printf: 28 
+return: 8 
+sizeof: 8 
+stdio: 3 
+stdlib: 4 
+struct: 7 8 8 12 13 24 25 
+tmp: 13 17 18 19 20 
+void: 7 12 24 

@@ -1,0 +1,5 @@
+cross_referencer.out testdata/the_zen_of_python_output.txt ../word_freq_count/testdata/the_zen_of_python.txt
+cross_referencer.out testdata/main_output.txt main.c
+cross_referencer.out testdata/list_output.txt list.c
+cross_referencer.out testdata/tree_output.txt tree.c
+cross_referencer.out /dev/null

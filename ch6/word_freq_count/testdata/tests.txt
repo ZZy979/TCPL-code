@@ -1,3 +1,4 @@
+count_word.out testdata/the_zen_of_python_output.txt testdata/the_zen_of_python.txt
 count_word.out testdata/main_output.txt main.c
 count_word.out testdata/tnode_output.txt tnode.c
 count_word.out /dev/null

@@ -1,0 +1,4 @@
+sort_word_freq.out testdata/the_zen_of_python_output.txt ../word_freq_count/testdata/the_zen_of_python.txt
+sort_word_freq.out testdata/main_output.txt ../word_freq_count/main.c
+sort_word_freq.out testdata/tnode_output.txt ../word_freq_count/tnode.c
+sort_word_freq.out /dev/null

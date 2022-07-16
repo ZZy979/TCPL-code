@@ -1,0 +1,92 @@
+Although: 11 16 18 
+Beautiful: 3 
+Complex: 6 
+Dutch: 16 
+Errors: 12 
+Explicit: 4 
+Flat: 7 
+If: 19 20 
+In: 14 
+Namespaces: 21 
+Now: 17 
+Peters: 1 
+Python: 1 
+Readability: 9 
+Simple: 5 
+Sparse: 8 
+Special: 10 
+The: 1 
+There: 15 
+Tim: 1 
+Unless: 13 
+Zen: 1 
+a: 19 20 
+ambiguity: 14 
+and: 15 
+are: 21 
+aren: 10 
+at: 16 
+bad: 19 
+be: 15 16 20 
+beats: 11 
+better: 3 4 5 6 7 8 17 18 
+break: 10 
+by: 1 
+cases: 10 
+complex: 5 
+complicated: 6 
+counts: 9 
+dense: 8 
+do: 15 21 
+easy: 20 
+enough: 10 
+explain: 19 20 
+explicitly: 13 
+face: 14 
+first: 16 
+good: 20 
+great: 21 
+guess: 14 
+hard: 19 
+honking: 21 
+idea: 19 20 21 
+implementation: 19 20 
+implicit: 4 
+is: 3 4 5 6 7 8 17 18 19 20 
+it: 15 19 20 
+let: 21 
+may: 16 20 
+more: 21 
+nested: 7 
+never: 12 17 18 
+not: 16 
+now: 18 
+obvious: 15 16 
+of: 1 14 21 
+often: 18 
+one: 15 15 21 
+only: 15 
+pass: 12 
+practicality: 11 
+preferably: 15 
+purity: 11 
+re: 16 
+refuse: 14 
+right: 18 
+rules: 10 
+s: 19 21 
+should: 12 15 
+silenced: 13 
+silently: 12 
+special: 10 
+t: 10 
+temptation: 14 
+than: 3 4 5 6 7 8 17 18 
+that: 16 
+the: 10 14 14 19 20 
+those: 21 
+to: 10 14 15 19 20 
+ugly: 3 
+unless: 16 
+way: 15 16 
+you: 16 

@@ -302,6 +302,8 @@ $ make test
     * [tnode结构及操作函数](ch6/word_freq_count/tnode.h)
     * [strdup函数](ch6/strdup.c)
 * [练习6-2](ch6/exec6-2)
+* [练习6-3](ch6/exec6-3)
+* [练习6-4](ch6/exec6-4)
 
 ### 6.6 表查找
 * [散列表](ch6/hash_table.c)
