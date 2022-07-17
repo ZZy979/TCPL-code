@@ -14,5 +14,8 @@ int main() {
 
     install("IN", "2");
     assert(strcmp(lookup("IN")->defn, "2") == 0);
+
+    undef("IN");
+    assert(lookup("IN") == NULL);
     return 0;
 }

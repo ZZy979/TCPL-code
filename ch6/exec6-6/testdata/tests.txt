@@ -1,0 +1,4 @@
+define_processor.out testdata/test_prog_output.txt ../keyword_counting/testdata/test_prog.c
+define_processor.out testdata/main_output.txt main.c
+define_processor.out testdata/word_counting_output.txt testdata/word_counting.c
+define_processor.out /dev/null

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#if !defined(int64_t)
+#endif
+
+#ifndef uint64_t
+#endif
+
+int main(int argc, char *argv[]) {
+    long long sum = 0;            /* sum of argv as integers */
+    unsigned long long unsigned_sum = 0;  /* sum of argv as unsigned integers */
+
+    while (--argc > 0) {
+        long long x = atoll(*++argv);
+        sum += x;
+        unsigned_sum += (unsigned long long) x;
+    }
+    printf("sum = %lld\n", sum);
+    printf("unsigned sum = %llu\n", unsigned_sum);
+    return 0;
+}

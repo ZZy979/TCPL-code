@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+/* 统计输入的行数、单词数与字符数 */
+int main() {
+    int c, nl, nw, nc, state;
+
+    printf("IN = %d, OUT = %d", 1, 0);
+    state = 0;
+    nl = nw = nc = 0;
+    while ((c = getchar()) != EOF) {
+        ++nc;
+        if (c == '\n')
+            ++nl;
+        if (c == ' ' || c == '\n' || c == '\t')
+            state = 0;    /* OUT of word */
+        else if (state == 0) {
+            state = 1;     /* IN word */
+            ++nw;
+        }
+    }
+    printf("%d %d %d\n", nl, nw, nc);
+
+    
+    
+    int IN = 1, OUT = 0;
+    printf("IN = %d, OUT = %d\n", IN, OUT);
+}

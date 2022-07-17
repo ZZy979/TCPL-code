@@ -12,3 +12,4 @@ struct nlist {
 unsigned hash(char *s);
 struct nlist *lookup(char *s);
 struct nlist *install(char *name, char *defn);
+void undef(char *name);

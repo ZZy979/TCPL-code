@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+#include "getword.h"
+#include "../hash_table.h"
+
+
+int main() {
+    char word[100], definition[100];
+    int len;
+    struct nlist *p;
+
+    while (getword(word, 100, 0) != EOF)
+        if (strcmp(word, "#define") == 0) {
+            getword(word, 100, 1);
+            len = get_definition(definition, 100);
+            definition[len - 1] = '\0';
+            install(word, definition);
+        }
+        else if (strcmp(word, "#undef") == 0) {
+            getword(word, 100, 1);
+            undef(word);
+        }
+        else if (word[0] == '\n')
+            putchar('\n');
+        else if ((p = lookup(word)) != NULL)
+            printf("%s", p->defn);
+        else
+            printf("%s", word);
+    return 0;
+}
