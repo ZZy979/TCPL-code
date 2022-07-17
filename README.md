@@ -313,9 +313,14 @@ $ make test
 ## 第7章 输入与输出
 ### 7.1 标准输入/输出
 * [将输入转换为小写形式](ch7/lower.c)
+* [练习7-1](ch7/exec7-1.c)
+
+### 7.2 格式化输出——printf
+* [练习7-2](ch7/exec7-2.c)
 
 ### 7.3 变长参数表
 * [minprintf函数](ch7/minprintf.c)
+* [练习7-3](ch7/minprintf2.c)
 
 ### 7.4 格式化输入——scanf
 * [简单计算器](ch7/rudimentary_calculator.c)
