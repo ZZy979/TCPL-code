@@ -324,6 +324,7 @@ $ make test
 
 ### 7.4 格式化输入——scanf
 * [简单计算器](ch7/rudimentary_calculator.c)
+* [练习7-4](ch7/minscanf.c)
 
 ### 7.5 文件访问
 * [拼接文件（版本1）](ch7/cat.c)

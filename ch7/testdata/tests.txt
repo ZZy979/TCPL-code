@@ -11,6 +11,7 @@ exec7-2.out /dev/null
 minprintf_test.out testdata/minprintf_output.txt
 minprintf2_test.out testdata/minprintf2_output.txt
 rudimentary_calculator.out testdata/rudimentary_calculator_output.txt ../ch4/testdata/rudimentary_calculator_input.txt
+minscanf_test.out /dev/null testdata/minscanf_input.txt
 filecopy_test.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt
 filecopy_test.out /dev/null
 cat.out testdata/cat_output.txt /dev/null ../ch5/testdata/123.txt ../ch5/testdata/hello_world.txt
