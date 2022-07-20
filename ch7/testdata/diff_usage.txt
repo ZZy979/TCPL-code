@@ -1,0 +1,1 @@
+usage: diff file1 file2

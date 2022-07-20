@@ -1,0 +1,1 @@
+find: can't open does_not_exist.txt

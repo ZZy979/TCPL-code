@@ -1,0 +1,2 @@
+reverse_polish_calculator.out ../../ch4/reverse_polish_calculator/testdata/output.txt ../../ch4/reverse_polish_calculator/testdata/input.txt
+reverse_polish_calculator.out /dev/null

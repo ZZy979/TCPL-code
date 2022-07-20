@@ -325,6 +325,7 @@ $ make test
 ### 7.4 格式化输入——scanf
 * [简单计算器](ch7/rudimentary_calculator.c)
 * [练习7-4](ch7/minscanf.c)
+* [练习7-5](ch7/reverse_polish_calculator)
 
 ### 7.5 文件访问
 * [拼接文件（版本1）](ch7/cat.c)
@@ -334,3 +335,5 @@ $ make test
 
 ### 7.7 行输入和输出
 * [getline函数](ch7/getline.c)
+* [练习7-6](ch7/diff.c)
+* [练习7-7](ch7/find.c)

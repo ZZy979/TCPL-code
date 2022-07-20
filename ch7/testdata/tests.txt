@@ -21,3 +21,21 @@ cat_v2.out testdata/cat_output.txt /dev/null ../ch5/testdata/123.txt ../ch5/test
 cat_v2.out ../ch5/testdata/hello_world.txt /dev/null ../ch5/testdata/hello_world.txt not_exist.txt
 cat_v2.out ../ch1/testdata/addressbook.txt ../ch1/testdata/addressbook.txt
 getline_test.out /dev/null ../ch4/testdata/Rubaiyat.txt
+diff.out testdata/diff_output1.txt /dev/null testdata/diff_input1.txt testdata/diff_input2.txt
+diff.out testdata/diff_output2.txt /dev/null testdata/diff_input1.txt testdata/diff_input3.txt
+diff.out testdata/diff_output3.txt /dev/null testdata/diff_input3.txt testdata/diff_input1.txt
+diff.out testdata/diff_output4.txt /dev/null testdata/diff_input1.txt /dev/null
+diff.out testdata/diff_output5.txt /dev/null /dev/null testdata/diff_input1.txt
+diff.out testdata/diff_output6.txt /dev/null testdata/diff_input1.txt testdata/diff_input4.txt
+diff.out /dev/null /dev/null testdata/diff_input1.txt testdata/diff_input1.txt
+diff.out /dev/null /dev/null /dev/null /dev/null
+diff.out testdata/diff_usage.txt
+diff.out testdata/diff_error.txt /dev/null testdata/diff_input1.txt does_not_exist.txt
+find.out testdata/find_usage.txt
+find.out ../ch4/testdata/grep_output.txt ../ch4/testdata/Rubaiyat.txt ould
+find.out ../ch5/testdata/find_v2_ould_nx.txt ../ch4/testdata/Rubaiyat.txt -nx ould
+find.out testdata/find_the.txt /dev/null the ../ch4/testdata/Rubaiyat.txt ../ch6/word_freq_count/testdata/the_zen_of_python.txt
+find.out testdata/find_argv_n.txt /dev/null -n *++argv cat.c diff.c find.c
+find.out testdata/find_is_nx.txt /dev/null -nx is ../ch4/testdata/Rubaiyat.txt ../ch6/word_freq_count/testdata/the_zen_of_python.txt
+find.out testdata/find_error.txt /dev/null abc does_not_exist.txt
+find.out testdata/find_illegal_option.txt ../ch4/testdata/Rubaiyat.txt -nb ould

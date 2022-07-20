@@ -1,0 +1,18 @@
+
+../ch4/testdata/Rubaiyat.txt:
+1:Ah Love! could you and I with Fate conspire
+3:Would not we shatter it to bits -- and then
+4:Re-mould it nearer to the Heart's Desire!
+
+../ch6/word_freq_count/testdata/the_zen_of_python.txt:
+1:The Zen of Python, by Tim Peters
+2:
+9:Readability counts.
+10:Special cases aren't special enough to break the rules.
+11:Although practicality beats purity.
+12:Errors should never pass silently.
+13:Unless explicitly silenced.
+14:In the face of ambiguity, refuse the temptation to guess.
+15:There should be one-- and preferably only one --obvious way to do it.
+16:Although that way may not be obvious at first unless you're Dutch.
+21:Namespaces are one honking great idea -- let's do more of those!

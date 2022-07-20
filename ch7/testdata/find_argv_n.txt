@@ -1,0 +1,10 @@
+
+cat.c:
+13:            if ((fp = fopen(*++argv, "r")) == NULL) {
+
+diff.c:
+
+find.c:
+15:    while (--argc > 0 && (*++argv)[0] == '-')
+16:        while (c = *++argv[0])
+38:            if ((fp = fopen(*++argv, "r")) == NULL) {

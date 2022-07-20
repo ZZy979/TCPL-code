@@ -1,0 +1,10 @@
+
+../ch4/testdata/Rubaiyat.txt:
+Would not we shatter it to bits -- and then
+Re-mould it nearer to the Heart's Desire!
+
+../ch6/word_freq_count/testdata/the_zen_of_python.txt:
+Special cases aren't special enough to break the rules.
+In the face of ambiguity, refuse the temptation to guess.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.

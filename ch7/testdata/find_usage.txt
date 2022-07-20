@@ -1,0 +1,1 @@
+Usage: find -x -n pattern [file...]
