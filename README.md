@@ -3,7 +3,7 @@
 
 图书链接：<https://book.douban.com/subject/1139336/>
 
-笔记：<https://blog.csdn.net/zzy979481894/article/details/122767409>
+笔记：<https://zzy979.github.io/posts/tcpl-note-index/>
 
 # 运行方式
 ## Windows
